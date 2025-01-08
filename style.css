@@ -302,23 +302,43 @@ path, polyline {
   
 }
 #imglef {
-  width: 40%;
-  height: auto;
+    width: 40%;
+    overflow: hidden;
+    height: auto;
 }
 
 #imglef h1 {
-  font-weight: 500;
-  letter-spacing: .5px;
-  font-size: 2.7vw;
-  color: #333;
+    font-weight: 500;
+    letter-spacing: 0; /* Remove any letter-spacing */
+    font-size: 2.7vw;
+    color: #333;
+    margin: 0;
 }
 
 #imglef h1 span {
-  color: #14CF93;
-  font-family: "MAZIUSREVIEW20";
-  font-weight: 200;
-  font-style: italic;
+    display: inline-block; /* Each word is inline-block */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100%); /* Start from below */
+    transition: transform 0.5s, opacity 0.5s ease-in-out;
 }
+
+#imglef h1 span.highlight {
+    color: #14CF93; /* Green color for the specific word */
+    font-family: "MAZIUS";
+    
+  
+}
+
+.h1-container {
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.animate-text {
+    margin: 0;
+    line-height: 1.2;
+}
+
 
 #imgrig{
   display: flex;
@@ -332,8 +352,8 @@ position: relative;
 #imgrig .imgcntnr{
   position: absolute;
   filter: grayscale();
-  width: 27vw;
-  height: 35vw;
+  width: 33vw; /*27*/
+  height: 40vw; /*35*/
   transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
   border-radius: 1vw;
 }
@@ -341,7 +361,7 @@ position: relative;
   filter: grayscale(0);
 }
 #imgrig .imgcntnr:nth-child(1){
-  transform: translate(-20%,-10%) rotate(-20deg); 
+  transform: translate(-20%,-27%) rotate(-60deg); 
  
   background-image: url('Clicks.jpg');
   background-size: cover;
@@ -349,14 +369,13 @@ position: relative;
   
 }
 #imgrig .imgcntnr:nth-child(2){
-  transform: translate(0%,-2%)  rotate(-15deg);     /*  default 0,0*/
- 
+  transform: translate(0%,-20%)  rotate(-30deg);     /*  default 0,0*/
   background-image: url('Snapchat.jpg');
   background-size: cover;
   background-position: center;
 }
 #imgrig .imgcntnr:nth-child(3){
-  transform: translate(20%,8%) rotate(-5deg);   /*  default 20,10 */
+  transform: translate(20%,-10%) rotate(-17deg);   /*  default 20,10 */
   
   background-image: url('Image1.JPG');
   background-size: cover;
@@ -1086,7 +1105,5 @@ section#expertise {
   height: 100vh;
   width: 100%;
 }
-
-
 
 

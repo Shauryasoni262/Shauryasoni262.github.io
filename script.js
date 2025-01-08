@@ -1,5 +1,4 @@
 
-
 function revealToSpan() {
     document.querySelectorAll(".reveal")
         .forEach(function (elem) {
@@ -111,15 +110,114 @@ function animateHomepage() {
         });
 }
 
-
-function locoInitialize() {
-    const scroll = new LocomotiveScroll({
-        el: document.querySelector("#main"), // Main scrolling container
-        smooth: true,
-    });
+function updateLocalTime() {
+    const localTimeElement = document.getElementById('local-time');
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    localTimeElement.textContent = `${hours}:${minutes}:${seconds}`;
 }
 
-// Initialize animations and smooth scroll
+
+
+
+
+function locoInitialize() {
+    // Initialize LocomotiveScroll
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector("#main"), // Main scroll container
+        smooth: true
+    });
+
+    // Sync ScrollTrigger with LocomotiveScroll
+    gsap.registerPlugin(ScrollTrigger);
+
+    ScrollTrigger.scrollerProxy("#main", {
+        scrollTop(value) {
+            return arguments.length
+                ? scroll.scrollTo(value, 0, 0) // Scroll to the specified position
+                : scroll.scroll.instance.scroll.y; // Get current scroll position
+        },
+        getBoundingClientRect() {
+            return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+        },
+        pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
+    });
+
+    // Update ScrollTrigger and LocomotiveScroll on scroll events
+    scroll.on("scroll", () => {
+        ScrollTrigger.update();
+    });
+
+    ScrollTrigger.addEventListener("refresh", () => scroll.update());
+
+    // Image rotation animations
+    gsap.to("#imgrig .imgcntnr:nth-child(1)", {
+        rotate: -40, // Rotate image
+        scrollTrigger: {
+            trigger: "#imgrig",
+            start: "top 100%", // Trigger point
+            end: "top 10%",   // End point
+            scrub: true,      // Smooth scrolling effect
+            scroller: "#main", // Pass LocomotiveScroll container here
+            markers: false     // Debugging markers (remove in production)
+        }
+    });
+
+    gsap.to("#imgrig .imgcntnr:nth-child(2)", {
+        rotate: -15, // Rotate image
+        scrollTrigger: {
+            trigger: "#imgrig",
+            start: "top 100%", // Trigger point
+            end: "top 10%",   // End point
+            scrub: true,      // Smooth scrolling effect
+            scroller: "#main", // Pass LocomotiveScroll container here
+            markers: false    // Debugging markers (remove in production)
+        }
+    });
+
+    gsap.to("#imgrig .imgcntnr:nth-child(3)", {
+        rotate: 5, // Rotate image
+        scrollTrigger: {
+            trigger: "#imgrig",
+            start: "top 100%", // Trigger point
+            end: "top 10%",   // End point
+            scrub: true,      // Smooth scrolling effect
+            scroller: "#main", // Pass LocomotiveScroll container here
+            markers: false     // Debugging markers (remove in production)
+        }
+    });
+
+    // Text animation example
+    gsap.fromTo(
+        ".animate-text span",
+        {
+            y: "100%",
+            opacity: 0
+        },
+        {
+            y: "0%",
+            opacity: 1,
+            duration: 0.3,
+            stagger: 0.1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".h1-container",
+                start: "top 60%",
+                end: "bottom top",
+                scroller: "#main"
+            }
+        }
+    );
+
+    // Refresh ScrollTrigger after initialization
+    ScrollTrigger.refresh();
+}
+
+// Initialize everything
+
+
  
 
 
@@ -133,6 +231,7 @@ function locoInitialize() {
 revealToSpan();
 valueSetters();
 loaderAnimation();
+setInterval(updateLocalTime, 1000);
 locoInitialize();
 
 
@@ -145,17 +244,10 @@ document.querySelectorAll('.prevent-default').forEach(link => {
     });
 });
 
-function updateLocalTime() {
-    const localTimeElement = document.getElementById('local-time');
-    const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
-    localTimeElement.textContent = `${hours}:${minutes}:${seconds}`;
-}
+
 
 // Update the local time every second
-setInterval(updateLocalTime, 1000);
+
 
 
 // Show the overlay when the "Credits" link is clicked
@@ -168,3 +260,8 @@ document.getElementById('credits-link').addEventListener('click', function (e) {
 document.getElementById('close-overlay').addEventListener('click', function () {
   document.getElementById('credits-overlay').style.display = 'none';
 });
+
+
+
+
+
