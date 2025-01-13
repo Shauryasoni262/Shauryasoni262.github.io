@@ -591,7 +591,7 @@ margin: 1vw 2vw;
 
 .cnt4 img {
   width: 100%; /* Image takes up full width of its container */
-  border-radius: 50px; /* Rounded corners */
+  border-radius: 20px; /* Rounded corners */
   display: block; /* Prevents extra space below the image */
    
 }
