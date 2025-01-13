@@ -1,4 +1,4 @@
-# Love App
+# Shaurya Portfolio
 
 ## **Demo App**
 [Demo Link](https://shauryasoni-portfolio.netlify.app/)
