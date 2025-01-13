@@ -226,14 +226,11 @@ function locoInitialize() {
 
 
 
-
-
 revealToSpan();
 valueSetters();
 loaderAnimation();
 setInterval(updateLocalTime, 1000);
 locoInitialize();
-
 
 
 

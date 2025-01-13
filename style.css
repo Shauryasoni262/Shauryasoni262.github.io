@@ -382,7 +382,7 @@ position: relative;
   background-position: center;
 }
 #work{
-  padding-top: 150px;
+  padding-top: 10vw;
   position: relative;
   width: 100%;
   min-height: 70vh;
@@ -435,60 +435,315 @@ position: relative;
   width: 100%;
 }
 
-.cnt {
+.cnt{
   margin-bottom: 16vw; /* Increased bottom margin for spacing */
   border-radius: 20px;
   overflow: hidden;
+  position: relative;  
 }
 
 .cnt img {
   width: 100%;
   display: block;
 }
-
 .cnt1 {
   width: 55%;
 }
-
+.cnt .text-overlay {
+  position: absolute;
+  bottom: 3%; /* Adjust as needed */
+  left: 4%; /* Adjust as needed */
+  color: black; /* Text color */
+  z-index: 10; /* Make sure it's above the image */
+  pointer-events: none; /* Optional: prevent interaction issues */
+  will-change: transform; 
+}
+.cnt1 .text-overlay .year,
+.cnt1 .text-overlay .role,
+.cnt1 .text-overlay .website-name {
+margin: 1vw 2vw; 
+  padding: 2vw 5vw 2vw 5vw;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10vw;
+  width: fit-content;
+}
+.cnt1 .text-overlay .year,
+.cnt1 .text-overlay .role{
+  font-weight: 400;
+  text-transform:uppercase;
+  font-size: 1.7vw;
+}
+.cnt1 .text-overlay .website-name {
+  padding: 3vw 5vw 3vw 5vw;
+  font-weight: 500;
+  font-family: Sans-Serif;
+  font-size: 2.5vw;
+  display: flex;
+  align-items: center;
+}
 .cnt2 {
   width: 28%;
-  align-self: flex-end; /* Align to the bottom (baseline)  */
-  margin-top: 16vw; /* Added top margin to create space  */
+align-self: flex-end; /* Align to the bottom (baseline)  */
+  margin-top: 16vw; 
 }
+.cnt2 .text-overlay .year,
+.cnt2 .text-overlay .role,
+.cnt2 .text-overlay .website-name {
+margin: 1vw 0vw; 
+  padding: 2vw 3vw 2vw 3vw;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10vw;
+  width: fit-content;
+}
+.cnt2 .text-overlay .year,
+.cnt2 .text-overlay .role{
+  font-weight: 400;
+  text-transform:uppercase;
+  font-size: 1.5vw;
+}
+.cnt2 .text-overlay .website-name {
+  padding: 2vw 4vw 2vw 4vw;
+  font-weight: 500;
+  font-family: Sans-Serif;
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
 
 .cnt3 {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 16vw; /* Increased bottom margin  */
+  margin-bottom: 16vw;
 }
 
-.cnt3 img {
-  width: 50%;
-  border-radius: 50px;
+.image-container {
+  position: relative; 
+  width: 50%; /* Matches the image width */
 }
+
+.image-container img {
+  width: 100%; /* Image takes up the full width of its container */
+  border-radius: 20px;
+  display: block; /* Prevents gaps caused by inline-block behavior */
+}
+
+.image-container .text-overlay {
+  position: absolute;
+  bottom: 3%; /* Positions the text near the bottom */
+  left: 4%; /* Positions the text near the left edge */
+  color: black; /* Text color */
+  z-index: 10; /* Ensures text appears above the image */
+  text-align: left; /* Aligns text to the left */
+  pointer-events: none; /* Prevents interaction issues */
+  will-change: transform;
+}
+
+
+.cnt3 .text-overlay .year,
+.cnt3 .text-overlay .role,
+.cnt3 .text-overlay .website-name {
+margin: 1vw 2vw; 
+  padding: 2vw 5vw 2vw 5vw;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10vw;
+  width: fit-content;
+}
+.cnt3 .text-overlay .year,
+.cnt3 .text-overlay .role{
+  font-weight: 400;
+  text-transform:uppercase;
+  font-size: 1.7vw;
+}
+.cnt3 .text-overlay .website-name {
+  padding: 3vw 5vw 3vw 5vw;
+  font-weight: 500;
+  font-family: Sans-Serif;
+  font-size: 2.5vw;
+  display: flex;
+  align-items: center;
+}
+
+
 
 .cnt4 {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Aligns the container to the right */
+  position: relative; 
+  margin-bottom: 16vw; /* Adjust as needed */
+}
+
+.image-container {
+  position: relative; /* Allows the text-overlay to be positioned inside the image container */
+  width: 50%; /* Matches the image width */
 }
 
 .cnt4 img {
-  width: 50%;
-  border-radius: 50px;
+  width: 100%; /* Image takes up full width of its container */
+  border-radius: 50px; /* Rounded corners */
+  display: block; /* Prevents extra space below the image */
+   
 }
+.cnt4 .text-overlay {
+  position: absolute; /* Positions the text relative to the image container */
+  bottom: 3%; /* Adjust as needed */
+  left: 4%; /* Adjust as needed */
+  color: black; /* Text color */
+  z-index: 10; /* Keeps the text above the image */
+  pointer-events: none; /* Prevents interaction issues */
+  will-change: transform; /* Optimization */
+}
+.cnt4 .text-overlay .year,
+.cnt4 .text-overlay .role,
+.cnt4 .text-overlay .website-name {
+margin: 1vw 2vw; 
+  padding: 2vw 5vw 2vw 5vw;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10vw;
+  width: fit-content;
+}
+.cnt4 .text-overlay .year,
+.cnt4 .text-overlay .role{
+  font-weight: 400;
+  text-transform:uppercase;
+  font-size: 1.7vw;
+}
+.cnt4 .text-overlay .website-name {
+  padding: 3vw 5vw 3vw 5vw;
+  font-weight: 500;
+  font-family: Sans-Serif;
+  font-size: 2.5vw;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1068px) {
+  .cnt1 .text-overlay .year,
+.cnt1 .text-overlay .role,
+.cnt1 .text-overlay .website-name {
+margin: 1vw 2vw; 
+  padding: 1vw 2vw 1vw 2vw;
+}
+.cnt1 .text-overlay .year,
+.cnt1 .text-overlay .role{
+  font-size: 1vw;
+}
+.cnt1 .text-overlay .website-name {
+  padding: 2vw 2vw 2vw 2vw;
+  font-size: 1.5vw;
+}
+
+.cnt2 .text-overlay .year,
+.cnt2 .text-overlay .role,
+.cnt2 .text-overlay .website-name {
+margin: 0.8vw 0vw; 
+  padding: 1vw 2vw 1vw 2vw;
+}
+.cnt2 .text-overlay .year,
+.cnt2 .text-overlay .role{
+  font-size: 1vw;
+}
+.cnt2 .text-overlay .website-name {
+  padding: 2vw 2vw 2vw 2vw;
+  font-size: 1.5vw;
+}
+  .cnt3 .text-overlay .year,
+.cnt3 .text-overlay .role,
+.cnt3 .text-overlay .website-name {
+margin: 1vw 2vw; 
+  padding: 1vw 2vw 1vw 2vw;
+}
+.cnt3 .text-overlay .year,
+.cnt3 .text-overlay .role{
+  font-size: 1vw;
+}
+.cnt3 .text-overlay .website-name {
+  padding: 2vw 2vw 2vw 2vw;
+  font-size: 1.5vw;
+}
+ .cnt4 .text-overlay .year,
+.cnt4 .text-overlay .role,
+.cnt4 .text-overlay .website-name {
+margin: 1vw 2vw; 
+  padding: 1vw 2vw 1vw 2vw;
+}
+.cnt4 .text-overlay .year,
+.cnt4 .text-overlay .role{
+  font-size: 1vw;
+}
+.cnt4 .text-overlay .website-name {
+  padding: 2vw 2vw 2vw 2vw;
+  font-size: 1.5vw;
+}
+/* if include 4th project copy paste any cnt xobtainer abive inside the media onece */
+}
+
 /*5th project if there*/
 /*.cnt5 {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  position: relative; 
+  margin-bottom: 16vw; 
+}
+.image-container {
+  position: relative; 
+  width: 40%; 
 }
 .cnt5 img {
-  width: 40%;
-  border-radius: 50px;
+  width: 100%;
+  border-radius: 50px; 
+  display: block; 
+  object-fit: cover; 
+}
+.cnt5 .text-overlay {
+  position: absolute; 
+  bottom: 3%; 
+  left: 4%; 
+  color: black;
+  z-index: 10;
+  pointer-events: none; 
+  will-change: transform; 
+}
+.cnt5 .text-overlay .year,
+.cnt5 .text-overlay .role,
+.cnt5 .text-overlay .website-name {
+margin: 1vw 2vw; 
+  padding: 2vw 5vw 2vw 5vw;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10vw;
+  width: fit-content;
+}
+.cnt5 .text-overlay .year,
+.cnt5 .text-overlay .role{
+  font-weight: 400;
+  text-transform:uppercase;
+  font-size: 1.7vw;
+}
+.cnt5 .text-overlay .website-name {
+  padding: 3vw 5vw 3vw 5vw;
+  font-weight: 500;
+  font-family: Sans-Serif;
+  font-size: 2.5vw;
+  display: flex;
+  align-items: center;
 }
 */
+
+
 .workend{
   width: 100%;
   position: relative;
@@ -503,6 +758,7 @@ position: relative;
 background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
   background-size: cover;
 }
+/*
 #cursor{
   position: fixed;
   width: 17vw;
@@ -511,7 +767,9 @@ background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
   z-index: 999;
 } 
 #cursor>div{
-  opacity: 1;
+  pointer-events: none;
+  transition:all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  opacity: 0;
   position: absolute;
 }
 #elem{
@@ -554,7 +812,7 @@ background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
 #elem img:nth-child(5){
   animation-delay: 4s;
 }
-@keyframes n{
+@keyframes an{
   0%{
     opacity: 1;
   }
@@ -577,7 +835,7 @@ background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
     opacity: 0;
   }
 }
-
+*/
 
 
 
@@ -1096,14 +1354,106 @@ section#expertise {
 }
 
 
+@media (max-width: 1068px) {
+  #work{
+  padding-top: 10vw;
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  background-color: #F2F2F2;
+}
+#work::before{
+  content: "";
+    position: absolute;
+    top: -75px;
+  width: 100%;
+  height: 150px;
+  transform: rotate(-180deg);
+  background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+  background-size: cover;
+}
 
+#work .workrow{
+  padding: 0 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.workrow h1{
+  display: flex;
+  align-items: baseline;
+  font-size: 8vw;
+  font-weight: 600;
+}
+.workrow h1 .mini{
+  font-size: 2vw;
+  margin-left: 5vw;
+  font-weight: 500;
+}
+.o-ui-arrow{
+  width: 5vw;
+  transform: rotate(90deg);
+}
+.o-ui-arrow path{
+  stroke: rgb(158, 158 ,158);
+}
 
-
-
-
-.demo{
-  height: 100vh;
+  #images {
+  margin-top: 7vw;
+  position: relative;
+  padding: 0 5vw;
   width: 100%;
 }
 
+.cnt {
+  margin-bottom: 16vw; /* Increased bottom margin for spacing */
+  border-radius: 20px;
+  overflow: hidden;
+  
+}
+
+.cnt img {
+  height: 100vw;
+  width: 100%;
+  display: block;
+}
+
+.cnt1 {
+  width: 100%;
+}
+  .cnt2 {
+  width: 100%;
+  align-self: flex-end; /* Align to the bottom (baseline)  */
+  margin-top: 7vw; /* Added top margin to create space  */
+}
+
+.cnt3 {
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16vw; /* Increased bottom margin  */
+}
+
+.cnt3 img {
+  background-size: cover;
+  width: 100%;
+  border-radius: 20px;
+}
+.image-container {
+  width: 100%; /* Matches the image width */
+}
+
+.cnt4 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cnt4 img {
+  width: 100%;
+  border-radius: 20px;
+}
+  
+}
 
