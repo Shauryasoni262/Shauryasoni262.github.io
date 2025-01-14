@@ -97,7 +97,7 @@ function animateHomepage() {
         .to("#home .parent .child", {
             y: 0,
             stagger: 0.1,
-            duration: 1.5,
+            duration: 1.3,
             ease: Expo.easeInOut
         })
         .to("#home .row img", {
