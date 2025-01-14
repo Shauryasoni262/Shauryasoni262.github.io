@@ -445,6 +445,7 @@ position: relative;
 .cnt img {
   width: 100%;
   display: block;
+  
 }
 .cnt1 {
   width: 55%;
@@ -483,6 +484,7 @@ margin: 1vw 2vw;
   align-items: center;
 }
 .cnt2 {
+  
   width: 28%;
 align-self: flex-end; /* Align to the bottom (baseline)  */
   margin-top: 16vw; 
@@ -510,6 +512,7 @@ margin: 1vw 0vw;
   font-size: 3vw;
   display: flex;
   align-items: center;
+ 
 }
 
 
@@ -537,7 +540,7 @@ margin: 1vw 0vw;
   display: block; /* Prevents gaps caused by inline-block behavior */
 }
 
-.image-container .text-overlay {
+.cnt3 .image-container .text-overlay {
   position: absolute;
   bottom: 3%; /* Positions the text near the bottom */
   left: 4%; /* Positions the text near the left edge */
@@ -628,6 +631,10 @@ margin: 1vw 2vw;
   display: flex;
   align-items: center;
 }
+.fonting {
+  font-family: "MAZIUS";
+  font-weight: bold;
+}
 
 @media (min-width: 1068px) {
   .cnt1 .text-overlay .year,
@@ -644,7 +651,6 @@ margin: 1vw 2vw;
   padding: 2vw 2vw 2vw 2vw;
   font-size: 1.5vw;
 }
-
 .cnt2 .text-overlay .year,
 .cnt2 .text-overlay .role,
 .cnt2 .text-overlay .website-name {
@@ -1422,6 +1428,7 @@ section#expertise {
   width: 100%;
 }
   .cnt2 {
+   
   width: 100%;
   align-self: flex-end; /* Align to the bottom (baseline)  */
   margin-top: 7vw; /* Added top margin to create space  */
