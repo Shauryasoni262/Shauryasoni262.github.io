@@ -130,7 +130,7 @@ top: 100%;
 
 #nav {
     position: fixed;
-    top: 0;
+    top: -1vw;
     left: 0;
     z-index: 1000;
     display: flex;
@@ -1333,6 +1333,7 @@ section#expertise {
 
 /* Large Screens */
 @media (min-width: 1201px) {
+ 
   #credits-overlay {
     height: 30vh; /* Take up 30% of the screen height */
     overflow-x: auto;
@@ -1361,6 +1362,7 @@ section#expertise {
 
 
 @media (max-width: 1068px) {
+
   #work{
   padding-top: 10vw;
   position: relative;
@@ -1464,3 +1466,18 @@ section#expertise {
   
 }
 
+@media (max-width: 1868px) {
+     #connect {
+  min-height: 100vh;
+  }
+}
+@media (max-width: 1268px) {
+     #connect {
+  min-height: 80vh;
+  }
+}
+@media (max-width: 668px) {
+     #connect {
+  min-height: 40vh;
+  }
+}
