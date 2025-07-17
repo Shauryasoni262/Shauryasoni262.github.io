@@ -38,7 +38,7 @@ function loaderAnimation() {
     var tl = gsap.timeline();
     tl
         .from("#loader .child span", {
-            x: 150,
+            x: 200,
             stagger: .2,
             duration: 1.5,
             opacity: .8,
@@ -63,7 +63,7 @@ function loaderAnimation() {
             top: 0,
             height: "100%",
             duration: 1,
-            delay: -.8,
+            delay: -1,
             ease: Circ.easeInout
         })
         .to("#green", {
@@ -91,13 +91,13 @@ function animateHomepage() {
         .to("#nav a", {
             y: 0,
             opacity: 1,
-            stagger: .05,
+            stagger: .03,
             ease: Expo.easeInOut
         })
         .to("#home .parent .child", {
             y: 0,
-            stagger: 0.1,
-            duration: 1.3,
+            stagger: 0.01,
+            duration: 0.7,
             ease: Expo.easeInOut
         })
         .to("#home .row img", {
