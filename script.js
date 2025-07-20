@@ -38,10 +38,10 @@ function loaderAnimation() {
     var tl = gsap.timeline();
     tl
         .from("#loader .child span", {
-            x: 200,
+            x: 100,
             stagger: .2,
-            duration: 1.5,
-            opacity: .8,
+            duration: 0.8,
+            opacity: .4,
             ease: Power3.easeInout
         })
         .to("#loader .parent .child", {
@@ -56,20 +56,20 @@ function loaderAnimation() {
         }, "-=0.5")
         .to("#loader", {
             height: 0,
-            duration: 1,
+            duration: 0.7,
             ease: Circ.easeInout
         })
         .to("#green", {
             top: 0,
             height: "100%",
-            duration: 1,
-            delay: -1,
+            duration: 0.7,
+            delay: -1.2,
             ease: Circ.easeInout
         })
         .to("#green", {
             height: "0%",
             delay: -.5,
-            duration: 1,
+            duration: 0.9,
             ease: Circ.easeInout,
             onComplete: function () {
                 animateHomepage();

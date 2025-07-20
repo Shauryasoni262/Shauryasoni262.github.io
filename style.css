@@ -3,13 +3,17 @@
     src:url(MAZIUSREVIEW20.09-Extraitalic.otf);
 }
 @font-face{
-  font-family: Gilroy;
-  src: url(Gilroy-Medium-1.ttf);
+  font-family: Gilroy-medium;
+  src: url(gilroy-medium.ttf);
+}
+@font-face{
+  font-family: Gilroy-semibold;
+  src: url(Gilroy-Semibold.ttf);
 }
 *{
     margin: 0;
     padding: 0;
-    font-family: Gilroy-Medium-1;
+    font-family: Gilroy-medium, sans-serif;
     box-sizing: border-box;
 }
 html,body{
@@ -38,8 +42,8 @@ html,body{
 #topheading h5{
 text-align: center;
     text-transform: uppercase;
-    font-size: 1vw;
-    font-weight: 300;
+    font-size: 0.8vw;
+    font-weight: 100;
 }
 
 #loader h1{
@@ -51,7 +55,7 @@ text-align: center;
     left: 50%;
    transform: translate(-50%,-50%);
    font-size: 4vw;
-   font-weight: 500;
+   font-weight: 100;
 }
 
 .lastname{
@@ -130,7 +134,7 @@ top: 100%;
 
 #nav {
     position: fixed;
-    top: -1vw;
+    top: -2vw;
     left: 0;
     z-index: 1000;
     display: flex;
@@ -145,7 +149,7 @@ top: 100%;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 1vw;
     color: black;
 }
@@ -242,15 +246,16 @@ top: 100%;
 }
 
 .row h1 {
+  font-family: Gilroy-medium;
     font-size: 10.5vw;
-    font-weight: 500;
+    font-weight: 550;
 }
 
 .row img {
-    width: 8vw;   /* Increase the width */
-    height: 8vw;  /* Set the height equal to width to maintain the aspect ratio */
-    object-fit: contain; /* Ensure the image is resized proportionally */
-    margin-top: 2vh; /* Adjust the margin if needed */
+    width: 8vw;   
+    height: 8vw; 
+    object-fit: contain; 
+    margin-top: 2vh; 
 }
 
 .row .text {
@@ -259,7 +264,7 @@ top: 100%;
 
 .row h5 {
     opacity: 0.6;
-    font-size: 1.5vw;
+    font-size: 0.8vw;
     font-weight: 500;
 }
 
@@ -536,7 +541,7 @@ margin: 1vw 0vw;
 
 .image-container img {
   width: 100%; /* Image takes up the full width of its container */
-  border-radius: 20px;
+  border-radius: 30px;
   display: block; /* Prevents gaps caused by inline-block behavior */
 }
 
@@ -1192,6 +1197,127 @@ section#expertise {
   transform: translateX(-3vw); /* Slightly move icon to the left  */
 }
 
+
+
+
+@media screen and (min-width: 1024px) {
+  .mobile-heading{
+    display: none; /* Hide mobile heading on larger screens */
+  }
+    #connect {
+    background-color: #1e3634;
+  }
+
+     #connect h1 {
+  font-size: 6vw;
+  font-family: gilroy-medium;
+  font-weight: 100;
+  margin-bottom: -4vh;
+  margin-top: -4vh;
+} 
+  .desktop-heading{
+    margin-top: 17vh;
+    margin-bottom: 6vh;
+}
+.buttons {
+    display: inline-flex;
+    gap: 4vw;
+    margin-top: 10vh;
+    z-index: 2;
+  }
+
+  .buttons .btn {
+    display: inline-block;
+    width: auto;
+    padding: 3vw 17vw 3vw 17vw;
+    border-width: 0.1vw;
+    border-radius: 5vw;
+    font-size: 1.5vw;
+      font-weight: 900;
+  }
+.buttons .btn a{
+  font-weight: 500;
+  font-family: gilroy-semibold;
+}
+
+.links {
+  display: flex;
+   gap: 5vw; 
+   margin-top: 7vh;
+   max-width: 100%;
+   margin-left: 2vw;
+  margin-right: auto;
+}
+
+ .link-item {
+  width: 100%; 
+  max-width: 100vw; 
+  border-top: 0.1vw solid white;
+  padding: 1vw 0; 
+}  
+
+.text-link {
+  position: relative; /* Position text above the pseudo-element  */
+  z-index: 1;/**/
+  text-align: left;
+  transition: transform 0.2s ease-in-out; 
+}
+
+.text-link p {
+  font-family: Sans-Serif;
+  font-size: 1.5vw;
+  margin: 0vw 0vw 0vw 0vw;
+  font-weight: 400;
+  color: white; /* Default text color  */
+  transition: color 0.2s ease; 
+  z-index: 1; 
+}
+
+.text-link span {
+  font-size: 1vw;
+  color: white;
+  margin: 0vw 9vw 0 0vw;
+  opacity: 0.5;
+  transition: color 0.2s ease, opacity 0.2s ease; 
+  z-index: 1; /*2*/
+}
+ 
+.link-item:hover .text-link {
+  transform: translateX(1.5vw); 
+}
+.link-item:hover .text-link p,
+.link-item:hover .text-link span {
+  color: white;
+  opacity: 1;
+}
+.icon {
+  width: 2.5vw;
+  height: 2.5vw;
+  font-size: 1.5vw;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  z-index: 1;
+  transition: transform 0.2s ease-in-out; 
+}
+.icon i{
+  padding-top: 0.5vw;
+}
+.link-item:hover .icon {
+  transform: translateX(-1vw);
+} 
+}
+
+
+@media screen and (max-width: 1024px) {
+ .desktop-heading{
+    display: none; /* Hide mobile heading on larger screens */
+  }
+
+}
+
+
+
 /* Footer Section */
 #footer {
   background-color: #2e2e2e;
@@ -1276,6 +1402,22 @@ section#expertise {
   transition: transform 0.2s ease-in-out;
 }
 
+
+
+@media screen and (min-width: 1024px) {
+
+#footer {
+  background-color: #1e3634;
+  padding: 4vh 2vw;
+  margin-top: 3vw;
+}
+
+#footer .footer-content {
+  font-size: 1vw;
+  opacity: 0.6;
+}
+
+}
 
 
 @media (max-width: 768px) {
