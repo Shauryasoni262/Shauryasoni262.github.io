@@ -10,6 +10,17 @@
   font-family: Gilroy-semibold;
   src: url(Gilroy-Semibold.ttf);
 }
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --accent-color: #0d6efd;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #bb86fc;
+}
 *{
     margin: 0;
     padding: 0;
@@ -702,7 +713,7 @@ margin: 1vw 2vw;
 }
 
 /*5th project if there*/
-/*.cnt5 {
+.cnt5 {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -752,7 +763,7 @@ margin: 1vw 2vw;
   display: flex;
   align-items: center;
 }
-*/
+
 
 
 .workend{
