@@ -647,6 +647,57 @@ margin: 1vw 2vw;
   display: flex;
   align-items: center;
 }
+.cnt5 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  position: relative; 
+  margin-bottom: 16vw; 
+}
+.image-container {
+  position: relative; 
+  width: 40%; 
+}
+.cnt5 img {
+  width: 100%;
+  border-radius: 50px; 
+  display: block; 
+  object-fit: cover; 
+}
+.cnt5 .text-overlay {
+  position: absolute; 
+  bottom: 3%; 
+  left: 4%; 
+  color: black;
+  z-index: 10;
+  pointer-events: none; 
+  will-change: transform; 
+}
+.cnt5 .text-overlay .year,
+.cnt5 .text-overlay .role,
+.cnt5 .text-overlay .website-name {
+margin: 1vw 2vw; 
+  padding: 2vw 5vw 2vw 5vw;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50px;
+  width: fit-content;
+}
+.cnt5 .text-overlay .year,
+.cnt5 .text-overlay .role{
+  font-weight: 400;
+  text-transform:uppercase;
+  font-size: 1.7vw;
+}
+.cnt5 .text-overlay .website-name {
+  padding: 3vw 5vw 3vw 5vw;
+  font-weight: 500;
+  font-family: Sans-Serif;
+  font-size: 2.5vw;
+  display: flex;
+  align-items: center;
+}
+
 .fonting {
   font-family: "MAZIUS";
   
@@ -709,59 +760,21 @@ margin: 1vw 2vw;
   padding: 2vw 2vw 2vw 2vw;
   font-size: 1.5vw;
 }
-/* if include 4th project copy paste any cnt xobtainer abive inside the media onece */
-}
-
-/*5th project if there*/
-.cnt5 {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  position: relative; 
-  margin-bottom: 16vw; 
-}
-.image-container {
-  position: relative; 
-  width: 40%; 
-}
-.cnt5 img {
-  width: 100%;
-  border-radius: 50px; 
-  display: block; 
-  object-fit: cover; 
-}
-.cnt5 .text-overlay {
-  position: absolute; 
-  bottom: 3%; 
-  left: 4%; 
-  color: black;
-  z-index: 10;
-  pointer-events: none; 
-  will-change: transform; 
-}
-.cnt5 .text-overlay .year,
+ .cnt5 .text-overlay .year,
 .cnt5 .text-overlay .role,
 .cnt5 .text-overlay .website-name {
 margin: 1vw 2vw; 
-  padding: 2vw 5vw 2vw 5vw;
-  border: 1px solid white;
-  background-color: white;
-  border-radius: 10vw;
-  width: fit-content;
+  padding: 1vw 2vw 1vw 2vw;
 }
 .cnt5 .text-overlay .year,
 .cnt5 .text-overlay .role{
-  font-weight: 400;
-  text-transform:uppercase;
-  font-size: 1.7vw;
+  font-size: 1vw;
 }
 .cnt5 .text-overlay .website-name {
-  padding: 3vw 5vw 3vw 5vw;
-  font-weight: 500;
-  font-family: Sans-Serif;
-  font-size: 2.5vw;
-  display: flex;
-  align-items: center;
+  padding: 2vw 2vw 2vw 2vw;
+  font-size: 1.5vw;
+}
+/* if include 4th project copy paste any cnt xobtainer abive inside the media onece */
 }
 
 
