@@ -438,7 +438,8 @@ position: relative;
   display: flex;
   align-items: baseline;
   font-size: 8vw;
-  font-weight: 600;
+  font-weight: 500;
+  color: #363636;
 }
 .workrow h1 .mini{
   font-size: 2vw;
