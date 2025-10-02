@@ -379,21 +379,21 @@ position: relative;
 #imgrig .imgcntnr:nth-child(1){
   transform: translate(-20%,-27%) rotate(-60deg); 
  
-  background-image: url('Clicks.jpg');
+  background-image: url('images/Clicks.jpg');
   background-size: cover;
   background-position: center;
   
 }
 #imgrig .imgcntnr:nth-child(2){
   transform: translate(0%,-20%)  rotate(-30deg);     /*  default 0,0*/
-  background-image: url('Snapchat.jpg');
+  background-image: url('images/Snapchat.jpg');
   background-size: cover;
   background-position: center;
 }
 #imgrig .imgcntnr:nth-child(3){
   transform: translate(20%,-10%) rotate(-17deg);   /*  default 20,10 */
   
-  background-image: url('Image1.JPG');
+  background-image: url('images/Image1.JPG');
   background-size: cover;
   background-position: center;
 }
@@ -411,7 +411,7 @@ position: relative;
   width: 100%;
   height: 150px;
   transform: rotate(-180deg);
-  background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+  background-image: url('assets/rippaper.svg');
   background-size: cover;
 }
 
@@ -790,7 +790,7 @@ margin: 1vw 2vw;
   width: 100%;
   height: 15vw;
   transform: rotate(-360deg);
-background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+background-image: url('assets/rippaper.svg');
   background-size: cover;
 }
 /*
@@ -1543,7 +1543,7 @@ section#expertise {
   width: 100%;
   height: 150px;
   transform: rotate(-180deg);
-  background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+  background-image: url('assets/rippaper.svg');
   background-size: cover;
 }
 
