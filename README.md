@@ -9,7 +9,7 @@
 
 The Love App is a beautifully designed, fully responsive website built with **HTML**, **CSS**, **JavaScript**, **GSAP**, **LocomotiveScroll**, and **ScrollTrigger**. It showcases a modern, elegant interface with smooth scrolling effects, animations, and a responsive layout that adapts seamlessly across all devices.
 
-The app is fully coded from scratch, ensuring a unique and personalized design. The website features interactive elements powered by **GSAP** and scroll effects using **LocomotiveScroll** and **ScrollTrigger**, creating a smooth and engaging user experience.
+The app is fully coded from scratch, ensuring a unique and personalized design. The website features interactive elements powered by **GSAP** and scroll effects using **LocomotiveScroll** and **ScrollTrigger**, creating a smooth and engaging user experiences.
 
 ---
 
