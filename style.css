@@ -1,14 +1,14 @@
 @font-face{
     font-family: Mazius;
-    src:url(MAZIUSREVIEW20.09-Extraitalic.otf);
+    src:url(fonts/MAZIUSREVIEW20.09-Extraitalic.otf);
 }
 @font-face{
   font-family: Gilroy-medium;
-  src: url(gilroy-medium.ttf);
+  src: url(fonts/gilroy-medium.ttf);
 }
 @font-face{
   font-family: Gilroy-semibold;
-  src: url(Gilroy-Semibold.ttf);
+  src: url(fonts/gilroy-semibold.ttf);
 }
 :root {
   --bg-color: #ffffff;
