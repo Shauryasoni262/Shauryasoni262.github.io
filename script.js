@@ -72,6 +72,11 @@ function loaderAnimation() {
             duration: 0.9,
             ease: Circ.easeInout,
             onComplete: function () {
+                // Remove loading classes and enable scrolling
+                document.body.classList.remove('loading');
+                document.querySelector('#main').classList.remove('loading');
+                // Initialize LocomotiveScroll after loader completes
+                locoInitialize();
                 animateHomepage();
             }
         });
@@ -226,11 +231,15 @@ function locoInitialize() {
 
 
 
+// Add loading classes to prevent scrolling during loader
+document.body.classList.add('loading');
+document.querySelector('#main').classList.add('loading');
+
 revealToSpan();
 valueSetters();
 loaderAnimation();
 setInterval(updateLocalTime, 1000);
-locoInitialize();
+// LocomotiveScroll will be initialized after loader completes
 
 
 

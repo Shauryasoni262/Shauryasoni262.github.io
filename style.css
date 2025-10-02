@@ -32,6 +32,19 @@ html,body{
     height: 100%;
 }
 
+/* Prevent scrolling during loader */
+body.loading {
+    overflow: hidden !important;
+    position: fixed !important;
+    width: 100% !important;
+    height: 100vh !important;
+}
+
+#main.loading {
+    overflow: hidden !important;
+    height: 100vh !important;
+}
+
 
 #loader{
  display: block; 
