@@ -27,8 +27,6 @@
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
-    <meta name="distribution" content="global">
-    <meta name="rating" content="general">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -41,6 +39,14 @@
     <meta property="og:image:alt" content="Shaurya Soni - Full-Stack Developer Logo">
     <meta property="og:site_name" content="Shaurya Soni Portfolio">
     <meta property="og:locale" content="en_US">
+    <meta property="og:updated_time" content="2025-01-27T00:00:00+00:00">
+    <meta property="article:author" content="Shaurya Soni">
+    <meta property="article:section" content="Portfolio">
+    <meta property="article:tag" content="Web Development">
+    <meta property="article:tag" content="Software Engineering">
+    <meta property="article:tag" content="React Development">
+    <meta property="article:tag" content="Node.js Development">
+    <meta property="article:tag" content="MongoDB Development">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -50,6 +56,7 @@
     <meta property="twitter:image" content="https://shauryasoni262.github.io/images/shaurya-favicons.png">
     <meta property="twitter:image:alt" content="Shaurya Soni - Full-Stack Developer Logo">
     <meta property="twitter:creator" content="@shauryasoni262">
+    <meta property="twitter:site" content="@shauryasoni262">
     
     <!-- Favicon and App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/shaurya-favicons.png">
@@ -69,7 +76,7 @@
     <!-- Microsoft Tiles -->
     <meta name="msapplication-TileImage" content="images/shaurya-favicons.png">
     <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="msapplication-config" content="config/browserconfig.xml">
     
     <!-- Additional SEO Meta Tags -->
     <meta name="geo.region" content="IN-UP">
@@ -87,11 +94,46 @@
     <meta name="msapplication-tooltip" content="Shaurya Soni - Full-Stack Developer Portfolio">
     <meta name="msapplication-starturl" content="/">
     
+    <!-- Additional Meta Tags for Better Indexing -->
+    <meta name="google-site-verification" content="">
+    <meta name="yandex-verification" content="">
+    <meta name="msvalidate.01" content="">
+    <meta name="baidu-site-verification" content="">
+    <meta name="pinterest-site-verification" content="">
+    <meta name="facebook-domain-verification" content="">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="slurp" content="index, follow">
+    <meta name="duckduckbot" content="index, follow">
+    <meta name="baiduspider" content="index, follow">
+    <meta name="yandexbot" content="index, follow">
+    <meta name="facebookexternalhit" content="index, follow">
+    <meta name="twitterbot" content="index, follow">
+    <meta name="linkedinbot" content="index, follow">
+    <meta name="whatsapp" content="index, follow">
+    <meta name="telegrambot" content="index, follow">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
     <!-- Canonical URL -->
     <link rel="canonical" href="https://shauryasoni262.github.io/">
     
+    <!-- Hreflang for International SEO -->
+    <link rel="alternate" hreflang="en" href="https://shauryasoni262.github.io/">
+    <link rel="alternate" hreflang="en-us" href="https://shauryasoni262.github.io/">
+    <link rel="alternate" hreflang="en-in" href="https://shauryasoni262.github.io/">
+    <link rel="alternate" hreflang="x-default" href="https://shauryasoni262.github.io/">
+    
     <!-- Sitemap -->
-    <link rel="sitemap" type="application/xml" href="https://shauryasoni262.github.io/sitemap.xml">
+    <link rel="sitemap" type="application/xml" href="https://shauryasoni262.github.io/config/sitemap.xml">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="config/manifest.json">
     
     <!-- Preload Critical Resources -->
     <link rel="preload" href="fonts/gilroy-medium.ttf" as="font" type="font/ttf" crossorigin>
@@ -100,11 +142,18 @@
     <link rel="preload" href="images/shaurya-favicons.png" as="image">
     <link rel="preload" href="images/jug.jpg" as="image">
     <link rel="preload" href="images/ayumi.jpg" as="image">
+    <link rel="preload" href="images/Imageing.jpg" as="image">
+    <link rel="preload" href="images/Imgs.jpg" as="image">
+    <link rel="preload" href="images/flowers.jpg" as="image">
     
     <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//github.com">
+    <link rel="dns-prefetch" href="//www.linkedin.com">
+    <link rel="dns-prefetch" href="//x.com">
+    <link rel="dns-prefetch" href="//www.instagram.com">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
@@ -112,9 +161,15 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json" src="structured-data-person.json"></script>
-    <script type="application/ld+json" src="structured-data-website.json"></script>
-    <script type="application/ld+json" src="structured-data-projects.json"></script>
+    <script type="application/ld+json" src="seo-data/structured-data-person.json"></script>
+    <script type="application/ld+json" src="seo-data/structured-data-website.json"></script>
+    <script type="application/ld+json" src="seo-data/structured-data-projects.json"></script>
+    <script type="application/ld+json" src="seo-data/structured-data-breadcrumbs.json"></script>
+    <script type="application/ld+json" src="seo-data/structured-data-faq.json"></script>
+    <script type="application/ld+json" src="seo-data/structured-data-organization.json"></script>
+    <script type="application/ld+json" src="seo-data/structured-data-article.json"></script>
+    <script type="application/ld+json" src="seo-data/structured-data-review.json"></script>
+    <script type="application/ld+json" src="seo-data/structured-data-video.json"></script>
 
 </head>
 

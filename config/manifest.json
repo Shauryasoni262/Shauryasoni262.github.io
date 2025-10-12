@@ -1,0 +1,70 @@
+{
+  "name": "Shaurya Soni Portfolio",
+  "short_name": "Shaurya Soni",
+  "description": "Professional Full-Stack Developer Portfolio - React, Node.js, Express.js, MongoDB Expert from Lucknow",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["portfolio", "web-development", "software-engineering"],
+  "icons": [
+    {
+      "src": "images/shaurya-favicons.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/shaurya-favicons.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/jug.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "CloudDrive App Project"
+    },
+    {
+      "src": "images/ayumi.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Articia App Project"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch with Shaurya Soni",
+      "url": "/#connect",
+      "icons": [
+        {
+          "src": "images/shaurya-favicons.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "short_name": "Portfolio",
+      "description": "View Shaurya's projects",
+      "url": "/#work",
+      "icons": [
+        {
+          "src": "images/shaurya-favicons.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

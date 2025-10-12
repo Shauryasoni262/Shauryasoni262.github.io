@@ -10,9 +10,19 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://shauryasoni262.github.io/images/collage.png</image:loc>
-      <image:title>Shaurya Soni - Full-Stack Developer Portfolio</image:title>
-      <image:caption>Professional portfolio showcasing frontend development, backend development, and mobile app development projects</image:caption>
+      <image:loc>https://shauryasoni262.github.io/images/shaurya-favicons.png</image:loc>
+      <image:title>Shaurya Soni - Full-Stack Developer Logo</image:title>
+      <image:caption>Professional logo for Shaurya Soni, a Full-Stack Developer from Lucknow specializing in React, Node.js, Express.js, and MongoDB development</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shauryasoni262.github.io/images/jug.jpg</image:loc>
+      <image:title>CloudDrive App - Backend Development Project</image:title>
+      <image:caption>Backend development project showcasing cloud storage application development</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shauryasoni262.github.io/images/ayumi.jpg</image:loc>
+      <image:title>Articia App - Frontend Development Project</image:title>
+      <image:caption>Frontend development project demonstrating React and modern web technologies</image:caption>
     </image:image>
   </url>
   

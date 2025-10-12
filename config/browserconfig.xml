@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="images/shaurya-favicons.png"/>
+            <square150x150logo src="../images/shaurya-favicons.png"/>
             <TileColor>#000000</TileColor>
         </tile>
     </msapplication>

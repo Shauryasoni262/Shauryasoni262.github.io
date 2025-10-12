@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What services does Shaurya Soni offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shaurya Soni offers full-stack web development services including frontend development with React, backend development with Node.js and Express.js, database design with MongoDB, and mobile app development. He specializes in creating responsive web applications and is available for freelance projects worldwide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Shaurya Soni located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shaurya Soni is based in Lucknow, Uttar Pradesh, India. He provides services to clients worldwide and is available for remote work and freelance projects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What technologies does Shaurya Soni specialize in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shaurya specializes in React for frontend development, Node.js and Express.js for backend development, MongoDB for database management, JavaScript programming, Java for software engineering, and modern web development technologies. He also has experience with GSAP animations, Bootstrap, and Redux for state management."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I contact Shaurya Soni for a project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can contact Shaurya Soni via email at shauryasoni262@gmail.com, through LinkedIn at https://www.linkedin.com/in/shaurya-soni-484589237/, or via GitHub at https://github.com/Shauryasoni262/. He is available for freelance projects and consultations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of projects has Shaurya Soni worked on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shaurya has worked on various projects including CloudDrive App (backend development), Articia App (frontend development), RBAC UI (React-based role management), Todo-List application (React & Redux), and Wedding Invitation websites. His portfolio showcases expertise in both frontend and backend development."
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://shauryasoni262.github.io/sitemap.xml
+Sitemap: https://shauryasoni262.github.io/config/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
@@ -15,15 +15,23 @@ Allow: /images/
 Allow: /fonts/
 Allow: /assets/
 Allow: /images/shaurya-favicons.png
-Allow: /browserconfig.xml
-Allow: /structured-data-person.json
-Allow: /structured-data-website.json
-Allow: /structured-data-projects.json
+Allow: /config/browserconfig.xml
+Allow: /config/manifest.json
+Allow: /seo-data/structured-data-person.json
+Allow: /seo-data/structured-data-website.json
+Allow: /seo-data/structured-data-projects.json
+Allow: /seo-data/structured-data-breadcrumbs.json
+Allow: /seo-data/structured-data-faq.json
+Allow: /seo-data/structured-data-organization.json
+Allow: /seo-data/structured-data-article.json
+Allow: /seo-data/structured-data-review.json
+Allow: /seo-data/structured-data-video.json
 
 # Disallow crawling of unnecessary files
-Disallow: /README.md
+Disallow: /docs/README.md
 Disallow: /License.txt
 Disallow: /Rough.txt
+Disallow: /docs/
 Disallow: /.git/
 Disallow: /.gitignore
 
