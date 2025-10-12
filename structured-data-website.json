@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Shaurya Soni Portfolio",
+  "url": "https://shauryasoni262.github.io/",
+  "description": "Professional portfolio of Shaurya Soni, a Full-Stack Developer from Lucknow specializing in React, Node.js, Express.js, and MongoDB development.",
+  "author": {
+    "@type": "Person",
+    "name": "Shaurya Soni"
+  },
+  "inLanguage": "en-US",
+  "copyrightYear": "2025",
+  "genre": "Portfolio",
+  "keywords": "frontend developer lucknow, backend developer lucknow, mobile app developer lucknow, react developer lucknow, nodejs developer lucknow, full stack developer lucknow"
+}
