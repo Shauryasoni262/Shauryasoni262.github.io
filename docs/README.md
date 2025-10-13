@@ -161,7 +161,7 @@ ShauryaSoni262.github.io/
 ### **SEO Monitoring**
 - Submit sitemap to Google Search Console
 - Monitor rich snippets in search results
-- Track keyword rankings
+- Track keyword ranking
 - Analyze user engagement metrics
 
 ## 📞 **Contact**
