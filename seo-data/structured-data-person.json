@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Shaurya Soni",
+  "jobTitle": "Full-Stack Developer",
+  "description": "Professional Full-Stack Developer from Lucknow specializing in React, Node.js, Express.js, MongoDB. Expert in frontend development, backend development, and mobile app development.",
+  "url": "https://shauryasoni262.github.io/",
+  "image": "https://shauryasoni262.github.io/images/shaurya-favicons.png",
+  "sameAs": [
+    "https://www.linkedin.com/in/shaurya-soni-484589237/",
+    "https://github.com/Shauryasoni262/",
+    "https://x.com/shauryasoni262",
+    "https://www.instagram.com/_shaurya.262_/"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lucknow",
+    "addressRegion": "Uttar Pradesh",
+    "addressCountry": "India"
+  },
+  "email": "shauryasoni262@gmail.com",
+  "knowsAbout": [
+    "Frontend Development",
+    "Backend Development", 
+    "Mobile App Development",
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JavaScript",
+    "Java",
+    "Software Engineering",
+    "Web Development",
+    "Full-Stack Development"
+  ],
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Full-Stack Developer",
+    "description": "Specializes in creating web applications using modern technologies like React, Node.js, Express.js, and MongoDB",
+    "skills": [
+      "React Development",
+      "Node.js Development", 
+      "Express.js Development",
+      "MongoDB Development",
+      "JavaScript Programming",
+      "Java Programming",
+      "Frontend Development",
+      "Backend Development",
+      "Mobile App Development",
+      "Software Engineering"
+    ]
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Software Engineering Education"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelance Developer",
+    "description": "Available for freelance projects worldwide"
+  }
+}

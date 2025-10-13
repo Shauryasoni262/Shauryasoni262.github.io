@@ -1,0 +1,49 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Shaurya Soni Portfolio Projects Demo",
+  "description": "Demonstration of full-stack development projects including CloudDrive App, Articia App, RBAC UI, Todo-List, and Wedding Invitation applications.",
+  "thumbnailUrl": "https://shauryasoni262.github.io/images/shaurya-favicons.png",
+  "uploadDate": "2025-01-27",
+  "duration": "PT5M",
+  "contentUrl": "https://shauryasoni262.github.io/",
+  "embedUrl": "https://shauryasoni262.github.io/",
+  "author": {
+    "@type": "Person",
+    "name": "Shaurya Soni"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shaurya Soni Development Services",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://shauryasoni262.github.io/images/shaurya-favicons.png"
+    }
+  },
+  "keywords": [
+    "react development",
+    "nodejs development",
+    "mongodb development",
+    "expressjs development",
+    "full stack development",
+    "web development",
+    "portfolio showcase"
+  ],
+  "about": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "CloudDrive App",
+      "description": "Backend development project"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Articia App",
+      "description": "Frontend development project"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "RBAC UI",
+      "description": "React-based role management"
+    }
+  ]
+}

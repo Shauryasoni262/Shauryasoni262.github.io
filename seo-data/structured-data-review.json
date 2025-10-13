@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Organization",
+    "name": "Shaurya Soni Development Services",
+    "description": "Professional full-stack web development services"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Client Testimonials"
+  },
+  "reviewBody": "Shaurya Soni delivers exceptional full-stack development services with expertise in React, Node.js, Express.js, and MongoDB. Professional, reliable, and skilled developer from Lucknow.",
+  "datePublished": "2025-01-27",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shaurya Soni Portfolio"
+  }
+}

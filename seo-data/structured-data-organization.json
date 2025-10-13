@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Shaurya Soni Development Services",
+  "alternateName": "Shaurya Soni Portfolio",
+  "url": "https://shauryasoni262.github.io/",
+  "logo": "https://shauryasoni262.github.io/images/shaurya-favicons.png",
+  "description": "Professional full-stack web development services specializing in React, Node.js, Express.js, and MongoDB. Based in Lucknow, India, serving clients worldwide.",
+  "foundingDate": "2023",
+  "founder": {
+    "@type": "Person",
+    "name": "Shaurya Soni"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lucknow",
+    "addressRegion": "Uttar Pradesh",
+    "addressCountry": "India"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-XXXXXXXXXX",
+    "contactType": "customer service",
+    "email": "shauryasoni262@gmail.com",
+    "availableLanguage": ["English", "Hindi"]
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/shaurya-soni-484589237/",
+    "https://github.com/Shauryasoni262/",
+    "https://x.com/shauryasoni262",
+    "https://www.instagram.com/_shaurya.262_/"
+  ],
+  "serviceArea": {
+    "@type": "Country",
+    "name": "Worldwide"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Web Development Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Frontend Development",
+          "description": "React-based frontend development with modern UI/UX design"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Backend Development",
+          "description": "Node.js and Express.js backend development with MongoDB integration"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Full-Stack Development",
+          "description": "Complete web application development from frontend to backend"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mobile App Development",
+          "description": "Cross-platform mobile application development"
+        }
+      }
+    ]
+  }
+}

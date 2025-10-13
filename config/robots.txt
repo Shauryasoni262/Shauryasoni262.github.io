@@ -1,0 +1,61 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://shauryasoni262.github.io/config/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all search engines to index the site
+Allow: /index.html
+Allow: /style.css
+Allow: /script.js
+Allow: /images/
+Allow: /fonts/
+Allow: /assets/
+Allow: /images/shaurya-favicons.png
+Allow: /config/browserconfig.xml
+Allow: /config/manifest.json
+Allow: /seo-data/structured-data-person.json
+Allow: /seo-data/structured-data-website.json
+Allow: /seo-data/structured-data-projects.json
+Allow: /seo-data/structured-data-breadcrumbs.json
+Allow: /seo-data/structured-data-faq.json
+Allow: /seo-data/structured-data-organization.json
+Allow: /seo-data/structured-data-article.json
+Allow: /seo-data/structured-data-review.json
+Allow: /seo-data/structured-data-video.json
+
+# Disallow crawling of unnecessary files
+Disallow: /docs/README.md
+Disallow: /License.txt
+Disallow: /Rough.txt
+Disallow: /docs/
+Disallow: /.git/
+Disallow: /.gitignore
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /

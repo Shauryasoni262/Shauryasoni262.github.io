@@ -1,0 +1,96 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Shaurya Soni - Professional Full-Stack Developer Portfolio",
+  "description": "Comprehensive portfolio showcasing expertise in React, Node.js, Express.js, MongoDB development. Professional full-stack developer from Lucknow available for freelance projects worldwide.",
+  "image": "https://shauryasoni262.github.io/images/shaurya-favicons.png",
+  "author": {
+    "@type": "Person",
+    "name": "Shaurya Soni",
+    "url": "https://shauryasoni262.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/shaurya-soni-484589237/",
+      "https://github.com/Shauryasoni262/",
+      "https://x.com/shauryasoni262",
+      "https://www.instagram.com/_shaurya.262_/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shaurya Soni Development Services",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://shauryasoni262.github.io/images/shaurya-favicons.png"
+    }
+  },
+  "datePublished": "2023-01-01",
+  "dateModified": "2025-01-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://shauryasoni262.github.io/"
+  },
+  "articleSection": "Portfolio",
+  "keywords": [
+    "frontend developer lucknow",
+    "backend developer lucknow",
+    "full stack developer lucknow",
+    "react developer lucknow",
+    "nodejs developer lucknow",
+    "mongodb developer lucknow",
+    "expressjs developer lucknow",
+    "javascript developer lucknow",
+    "web developer lucknow",
+    "mobile app developer lucknow",
+    "freelance developer lucknow",
+    "software engineer lucknow"
+  ],
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Web Development"
+    },
+    {
+      "@type": "Thing",
+      "name": "Software Engineering"
+    },
+    {
+      "@type": "Thing",
+      "name": "React Development"
+    },
+    {
+      "@type": "Thing",
+      "name": "Node.js Development"
+    },
+    {
+      "@type": "Thing",
+      "name": "MongoDB Development"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "CloudDrive App",
+      "url": "https://clouddrive-s75j.onrender.com"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Articia App",
+      "url": "https://shauryasoni262.github.io/Articia/"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "RBAC UI",
+      "url": "https://vrv-security-assignment.netlify.app/"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Todo-List",
+      "url": "https://todo-list-shauryas.netlify.app/"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Wedding Invitation",
+      "url": "https://shauryasoni262.github.io/Wedding-Invitation/"
+    }
+  ]
+}

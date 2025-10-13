@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Shaurya Soni Portfolio Projects",
+  "description": "Collection of web development projects including CloudDrive App, Articia App, RBAC UI, Todo-List, and Wedding Invitation applications.",
+  "creator": {
+    "@type": "Person",
+    "name": "Shaurya Soni"
+  },
+  "dateCreated": "2023",
+  "dateModified": "2025",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Shaurya Soni Portfolio"
+  },
+  "workExample": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "CloudDrive App",
+      "description": "Backend development project for cloud storage application",
+      "applicationCategory": "WebApplication",
+      "operatingSystem": "Web Browser",
+      "url": "https://clouddrive-s75j.onrender.com",
+      "dateCreated": "2025"
+    },
+    {
+      "@type": "SoftwareApplication", 
+      "name": "Articia App",
+      "description": "Frontend development project for Articia application",
+      "applicationCategory": "WebApplication",
+      "operatingSystem": "Web Browser",
+      "url": "https://shauryasoni262.github.io/Articia/",
+      "dateCreated": "2023"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "RBAC UI",
+      "description": "React-based Role-Based Access Control user interface",
+      "applicationCategory": "WebApplication", 
+      "operatingSystem": "Web Browser",
+      "url": "https://vrv-security-assignment.netlify.app/",
+      "dateCreated": "2024"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Todo-List",
+      "description": "React and Redux powered todo list application",
+      "applicationCategory": "WebApplication",
+      "operatingSystem": "Web Browser", 
+      "url": "https://todo-list-shauryas.netlify.app/",
+      "dateCreated": "2024"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Wedding Invitation",
+      "description": "Frontend development project for wedding invitation website",
+      "applicationCategory": "WebApplication",
+      "operatingSystem": "Web Browser",
+      "url": "https://shauryasoni262.github.io/Wedding-Invitation/",
+      "dateCreated": "2023"
+    }
+  ]
+}
