@@ -975,7 +975,8 @@ section#expertise {
 
 .service-box {
   width: 22vw;
-  height: 22vw;
+  height: auto;
+  min-height: 18vw;
   background: linear-gradient(145deg, #1e3a5f, #274a7e);
   border-radius: .2vw;
   box-shadow: 0 0 1.5vw rgba(0, 0, 0, 0.8), inset -0.3vw -0.3vw 0.6vw rgba(255, 255, 255, 0.1);
@@ -999,8 +1000,9 @@ section#expertise {
 }
 
 .service-box p {
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   color: #c1d8f0;
+  line-height: 1.4;
 }
 
 /* Animations  */
@@ -1046,7 +1048,8 @@ section#expertise {
   }
 
   .service-box p {
-    font-size: 3vw;
+    font-size: 2.5vw;
+    line-height: 1.3;
   }
 }
 
