@@ -970,7 +970,7 @@
 </a>
 <div id="footer">
   <div class="footer-content">
-    <p>©2025 Shaurya Soni, All Rights Reserved</p>
+    <p id="copyright-trigger" style="cursor: pointer;" title="Triple click or press Ctrl+Shift+E to manage content">©2025 Shaurya Soni, All Rights Reserved</p>
     <p><a href="#" id="credits-link">Credits</a> • <a href="#main">2025 Portfolio</a></p>
   </div>
 </div>
@@ -1003,6 +1003,234 @@
   </div>
 </div>
 
+<!-- Secret Admin Editor Modal -->
+<div id="admin-modal-overlay" class="admin-modal-overlay hidden">
+  <div class="admin-modal-container">
+    <div class="admin-modal-header">
+      <div class="admin-title">
+        <i class="fa-solid fa-user-gear"></i> Portfolio Content Manager
+      </div>
+      <button id="admin-modal-close" class="admin-close-btn">&times;</button>
+    </div>
+
+    <!-- Passcode Auth Screen -->
+    <div id="admin-auth-screen" class="admin-screen">
+      <div class="admin-auth-box">
+        <div class="admin-auth-icon"><i class="fa-solid fa-lock"></i></div>
+        <h3>Admin Passcode Required</h3>
+        <p>Enter your secret passcode to manage portfolio content.</p>
+        <form id="admin-auth-form">
+          <input type="password" id="admin-passcode-input" placeholder="Enter Passcode..." autocomplete="current-password" required />
+          <button type="submit" class="admin-btn admin-btn-primary">Unlock Editor</button>
+        </form>
+        <div id="admin-auth-error" class="admin-error-msg hidden">Incorrect passcode. Try again.</div>
+      </div>
+    </div>
+
+    <!-- Editor Main Screen -->
+    <div id="admin-editor-screen" class="admin-screen hidden">
+      <!-- Tabs Navigation -->
+      <div class="admin-tabs">
+        <button class="admin-tab-btn active" data-tab="tab-projects"><i class="fa-solid fa-folder-open"></i> Projects (<span id="admin-proj-count">0</span>)</button>
+        <button class="admin-tab-btn" data-tab="tab-personal"><i class="fa-solid fa-user"></i> Personal Info</button>
+        <button class="admin-tab-btn" data-tab="tab-socials"><i class="fa-solid fa-share-nodes"></i> Social Links</button>
+        <button class="admin-tab-btn" data-tab="tab-skills"><i class="fa-solid fa-code"></i> Skills & Services</button>
+        <button class="admin-tab-btn" data-tab="tab-github"><i class="fa-brands fa-github"></i> Direct GitHub Push</button>
+      </div>
+
+      <div class="admin-tab-content">
+        <!-- TAB 1: PROJECTS MANAGER -->
+        <div id="tab-projects" class="admin-tab-panel active">
+          <div class="admin-panel-actions">
+            <h4>Manage Projects</h4>
+            <button id="admin-add-project-btn" class="admin-btn admin-btn-accent"><i class="fa-solid fa-plus"></i> Add New Project</button>
+          </div>
+          <div id="admin-project-list" class="admin-project-list">
+            <!-- Project Cards rendered via JS -->
+          </div>
+
+          <!-- Project Form (Create / Edit) -->
+          <div id="admin-project-form-container" class="admin-form-box hidden">
+            <h4 id="admin-project-form-title">Add / Edit Project</h4>
+            <input type="hidden" id="admin-proj-id" />
+            <div class="admin-form-grid">
+              <div class="admin-field">
+                <label>Project Title</label>
+                <input type="text" id="admin-proj-title" placeholder="e.g. CloudDrive App" required />
+              </div>
+              <div class="admin-field">
+                <label>Formatted Title (HTML)</label>
+                <input type="text" id="admin-proj-title-formatted" placeholder='e.g. C<span class="fonting">l</span>oudDrive App' />
+                <small>Optional HTML styling for fonting effect</small>
+              </div>
+              <div class="admin-field">
+                <label>Year</label>
+                <input type="text" id="admin-proj-year" placeholder="e.g. 2025" />
+              </div>
+              <div class="admin-field">
+                <label>Role / Tech Badge</label>
+                <input type="text" id="admin-proj-role" placeholder="e.g. Back-End Dev" />
+              </div>
+              <div class="admin-field admin-field-full">
+                <label>Image Source (Path or Web URL)</label>
+                <input type="text" id="admin-proj-image" placeholder="e.g. images/jug.jpg or https://..." required />
+              </div>
+              <div class="admin-field admin-field-full">
+                <label>Live Demo / Repo Link</label>
+                <input type="url" id="admin-proj-link" placeholder="e.g. https://clouddrive-s75j.onrender.com" required />
+              </div>
+              <div class="admin-field admin-field-full">
+                <label>Alt Text (SEO)</label>
+                <input type="text" id="admin-proj-alt" placeholder="Project description for SEO" />
+              </div>
+            </div>
+            <div class="admin-form-buttons">
+              <button id="admin-save-project-btn" class="admin-btn admin-btn-success"><i class="fa-solid fa-check"></i> Save Project</button>
+              <button id="admin-cancel-project-btn" class="admin-btn admin-btn-secondary">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: PERSONAL INFO -->
+        <div id="tab-personal" class="admin-tab-panel">
+          <h4>Personal & Contact Information</h4>
+          <div class="admin-form-grid">
+            <div class="admin-field">
+              <label>First Name</label>
+              <input type="text" id="admin-per-fname" />
+            </div>
+            <div class="admin-field">
+              <label>Last Name</label>
+              <input type="text" id="admin-per-lname" />
+            </div>
+            <div class="admin-field admin-field-full">
+              <label>Professional Title</label>
+              <input type="text" id="admin-per-title" />
+            </div>
+            <div class="admin-field admin-field-full">
+              <label>Freelance Availability Status</label>
+              <input type="text" id="admin-per-availability" />
+            </div>
+            <div class="admin-field admin-field-full">
+              <label>Hero Headline Banner</label>
+              <textarea id="admin-per-bioheadline" rows="2"></textarea>
+            </div>
+            <div class="admin-field admin-field-full">
+              <label>About Me Description</label>
+              <textarea id="admin-per-aboutme" rows="4"></textarea>
+            </div>
+            <div class="admin-field">
+              <label>Email Address</label>
+              <input type="email" id="admin-per-email" />
+            </div>
+            <div class="admin-field">
+              <label>Location</label>
+              <input type="text" id="admin-per-location" />
+            </div>
+            <div class="admin-field admin-field-full">
+              <label>Resume Drive Link</label>
+              <input type="url" id="admin-per-resumelink" />
+            </div>
+            <div class="admin-field admin-field-full">
+              <label>Admin Passcode</label>
+              <input type="text" id="admin-per-passcode" placeholder="Change passcode..." />
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: SOCIAL LINKS -->
+        <div id="tab-socials" class="admin-tab-panel">
+          <h4>Social Media Accounts</h4>
+          <div class="admin-form-grid">
+            <div class="admin-field">
+              <label>Instagram URL</label>
+              <input type="url" id="admin-soc-insta-url" />
+            </div>
+            <div class="admin-field">
+              <label>Instagram Handle</label>
+              <input type="text" id="admin-soc-insta-handle" />
+            </div>
+            <div class="admin-field">
+              <label>GitHub URL</label>
+              <input type="url" id="admin-soc-gh-url" />
+            </div>
+            <div class="admin-field">
+              <label>GitHub Handle</label>
+              <input type="text" id="admin-soc-gh-handle" />
+            </div>
+            <div class="admin-field">
+              <label>LinkedIn URL</label>
+              <input type="url" id="admin-soc-li-url" />
+            </div>
+            <div class="admin-field">
+              <label>LinkedIn Handle</label>
+              <input type="text" id="admin-soc-li-handle" />
+            </div>
+            <div class="admin-field">
+              <label>Twitter/X URL</label>
+              <input type="url" id="admin-soc-tw-url" />
+            </div>
+            <div class="admin-field">
+              <label>Twitter/X Handle</label>
+              <input type="text" id="admin-soc-tw-handle" />
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 4: SKILLS & SERVICES -->
+        <div id="tab-skills" class="admin-tab-panel">
+          <h4>Expertise & Skills</h4>
+          <div id="admin-skills-container" class="admin-form-grid">
+            <!-- Skills rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- TAB 5: GITHUB DIRECT PUSH -->
+        <div id="tab-github" class="admin-tab-panel">
+          <h4>Direct Push to GitHub Repository</h4>
+          <p class="admin-hint-text">
+            Enter a <strong>GitHub Personal Access Token (PAT)</strong> with repo scope to commit updates to your <code>data/portfolio.json</code> directly from this browser window!
+          </p>
+          <div class="admin-form-grid">
+            <div class="admin-field admin-field-full">
+              <label>GitHub Personal Access Token (PAT)</label>
+              <input type="password" id="admin-gh-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" />
+              <small>Saved locally in your browser's localStorage for convenience.</small>
+            </div>
+            <div class="admin-field">
+              <label>Repository Owner</label>
+              <input type="text" id="admin-gh-owner" value="Shauryasoni262" />
+            </div>
+            <div class="admin-field">
+              <label>Repository Name</label>
+              <input type="text" id="admin-gh-repo" value="Shauryasoni262.github.io" />
+            </div>
+            <div class="admin-field">
+              <label>Branch</label>
+              <input type="text" id="admin-gh-branch" value="main" />
+            </div>
+            <div class="admin-field admin-field-full">
+              <button id="admin-gh-push-btn" class="admin-btn admin-btn-primary"><i class="fa-brands fa-github"></i> Commit & Push portfolio.json to GitHub Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- /admin-tab-content -->
+
+      <!-- Footer Bar -->
+      <div class="admin-footer-bar">
+        <div class="admin-footer-left">
+          <button id="admin-live-preview-btn" class="admin-btn admin-btn-info"><i class="fa-solid fa-eye"></i> Live Preview Site</button>
+        </div>
+        <div class="admin-footer-right">
+          <button id="admin-copy-json-btn" class="admin-btn admin-btn-secondary"><i class="fa-solid fa-copy"></i> Copy JSON</button>
+          <button id="admin-download-json-btn" class="admin-btn admin-btn-success"><i class="fa-solid fa-download"></i> Download portfolio.json</button>
+        </div>
+      </div>
+
+    </div> <!-- /admin-editor-screen -->
+  </div>
+</div>
   </section>
   
   

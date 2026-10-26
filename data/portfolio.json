@@ -1,0 +1,101 @@
+{
+  "passcode": "shaurya2025",
+  "personal": {
+    "firstName": "Shaurya",
+    "lastName": "Soni",
+    "title": "Full-Stack Developer | React & Node.js Expert | Lucknow",
+    "bioHeadline": "I AM SHAURYA SONI, I CREATE Unconventional YET FUNCTIONAL & VISUALLY PLEASING INTERFACES FOR THE MOBILE AND WEB.",
+    "aboutMe": "I'm Shaurya Soni, a passionate full-stack developer from Lucknow, India. Beyond coding, I'm passionate about exploring the mysteries of space, capturing the beauty of life through photography, and expressing creativity through art. As a professional developer, I combine technical expertise with creative vision to build innovative web applications and mobile solutions.",
+    "availability": "CURRENTLY AVAILABLE FOR FREELANCE WORLDWIDE",
+    "email": "shauryasoni262@gmail.com",
+    "location": "Lucknow, Uttar Pradesh, India",
+    "resumeLink": "https://drive.google.com/file/d/1MfAwIEYODknAkQA2HJp5Re9v_r9dYv3N/view?usp=sharing"
+  },
+  "socials": {
+    "instagram": {
+      "url": "https://www.instagram.com/_shaurya.262_/",
+      "handle": "@_shaurya.262_"
+    },
+    "github": {
+      "url": "https://github.com/Shauryasoni262/",
+      "handle": "@Shauryasoni"
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/shaurya-soni-484589237/",
+      "handle": "@Shaurya_Soni"
+    },
+    "twitter": {
+      "url": "https://x.com/shauryasoni262",
+      "handle": "@shauryasoni262"
+    }
+  },
+  "projects": [
+    {
+      "id": "clouddrive",
+      "title": "CloudDrive App",
+      "titleFormatted": "C<span class=\"fonting\">l</span>oudDrive App",
+      "year": "2025",
+      "role": "Back-End Dev",
+      "image": "images/jug.jpg",
+      "altText": "CloudDrive App - Backend Development Project by Shaurya Soni",
+      "link": "https://clouddrive-s75j.onrender.com"
+    },
+    {
+      "id": "articia",
+      "title": "Articia App",
+      "titleFormatted": "A<span class=\"fonting\">r</span>ticia App",
+      "year": "2023",
+      "role": "Front-End Dev",
+      "image": "images/ayumi.jpg",
+      "altText": "Articia App - Frontend Development Project by Shaurya Soni",
+      "link": "https://shauryasoni262.github.io/Articia/"
+    },
+    {
+      "id": "rbac-ui",
+      "title": "RBAC UI",
+      "titleFormatted": "R<span class=\"fonting\">B</span>AC UI",
+      "year": "2024",
+      "role": "React",
+      "image": "images/Imageing.jpg",
+      "altText": "RBAC UI - React Role-Based Access Control Project by Shaurya Soni",
+      "link": "https://vrv-security-assignment.netlify.app/"
+    },
+    {
+      "id": "todo-list",
+      "title": "Todo-List",
+      "titleFormatted": "T<span class=\"fonting\">o</span>do-List",
+      "year": "2024",
+      "role": "React & Redux",
+      "image": "images/Imgs.jpg",
+      "altText": "Todo-List App - React and Redux Project by Shaurya Soni",
+      "link": "https://todo-list-shauryas.netlify.app/"
+    },
+    {
+      "id": "wedding-invitation",
+      "title": "Wedding-Invitation",
+      "titleFormatted": "Wedding-Invitation",
+      "year": "2023",
+      "role": "Front-End Dev",
+      "image": "images/flowers.jpg",
+      "altText": "Wedding Invitation Website - Frontend Development Project by Shaurya Soni",
+      "link": "https://shauryasoni262.github.io/Wedding-Invitation/"
+    }
+  ],
+  "expertise": [
+    {
+      "id": "frontend",
+      "name": "Frontend Development",
+      "description": "React • JavaScript • GSAP • Bootstrap • Redux • HTML/CSS"
+    },
+    {
+      "id": "backend",
+      "name": "Backend Development",
+      "description": "Node.js • Express.js • MongoDB • RESTful APIs • Database Design"
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile App Development",
+      "description": "Flutter • Dart • Cross-platform • Mobile UI/UX • App Deployment"
+    }
+  ]
+}
