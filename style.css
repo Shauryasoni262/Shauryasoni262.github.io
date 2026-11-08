@@ -560,6 +560,10 @@ margin: 1vw 0vw;
 }
 
 .image-container {
+  position: relative;
+}
+
+.cnt3 .image-container {
   position: relative; 
   width: 50%; /* Matches the image width */
 }
@@ -617,7 +621,7 @@ margin: 1vw 2vw;
   margin-bottom: 16vw; /* Adjust as needed */
 }
 
-.image-container {
+.cnt4 .image-container {
   position: relative; /* Allows the text-overlay to be positioned inside the image container */
   width: 50%; /* Matches the image width */
 }
@@ -668,7 +672,7 @@ margin: 1vw 2vw;
   position: relative; 
   margin-bottom: 16vw; 
 }
-.image-container {
+.cnt5 .image-container {
   position: relative; 
   width: 40%; 
 }

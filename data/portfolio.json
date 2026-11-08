@@ -41,14 +41,14 @@
       "link": "https://clouddrive-s75j.onrender.com"
     },
     {
-      "id": "articia",
-      "title": "Articia App",
-      "titleFormatted": "A<span class=\"fonting\">r</span>ticia App",
-      "year": "2023",
-      "role": "Front-End Dev",
-      "image": "images/ayumi.jpg",
-      "altText": "Articia App - Frontend Development Project by Shaurya Soni",
-      "link": "https://shauryasoni262.github.io/Articia/"
+      "id": "yestojoin",
+      "title": "YesToJoin",
+      "titleFormatted": "YesTo<span class=\"fonting\">J</span>oin",
+      "year": "2025–2026",
+      "role": "Lead Full-Stack Dev",
+      "image": "images/yestojoin.png",
+      "altText": "YesToJoin - Enterprise Hospitality Recruitment & Talent Discovery Platform by Shaurya Soni",
+      "link": "https://yestojoin.com"
     },
     {
       "id": "rbac-ui",
@@ -61,14 +61,14 @@
       "link": "https://vrv-security-assignment.netlify.app/"
     },
     {
-      "id": "todo-list",
-      "title": "Todo-List",
-      "titleFormatted": "T<span class=\"fonting\">o</span>do-List",
-      "year": "2024",
-      "role": "React & Redux",
-      "image": "images/Imgs.jpg",
-      "altText": "Todo-List App - React and Redux Project by Shaurya Soni",
-      "link": "https://todo-list-shauryas.netlify.app/"
+      "id": "sarthiq",
+      "title": "SarthiQ",
+      "titleFormatted": "S<span class=\"fonting\">a</span>rthiQ",
+      "year": "2025–2026",
+      "role": "Next.js & Node.js",
+      "image": "images/sarthiq.png",
+      "altText": "SarthiQ - Intelligent EdTech & Career Acceleration Platform by Shaurya Soni",
+      "link": "https://sarthiq.com"
     },
     {
       "id": "wedding-invitation",

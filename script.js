@@ -134,6 +134,7 @@ function locoInitialize() {
         el: document.querySelector("#main"), // Main scroll container
         smooth: true
     });
+    window.locoScrollInstance = scroll;
 
     // Sync ScrollTrigger with LocomotiveScroll
     gsap.registerPlugin(ScrollTrigger);
@@ -307,14 +308,14 @@ const defaultPortfolioSchema = {
       "link": "https://clouddrive-s75j.onrender.com"
     },
     {
-      "id": "articia",
-      "title": "Articia App",
-      "titleFormatted": "A<span class=\"fonting\">r</span>ticia App",
-      "year": "2023",
-      "role": "Front-End Dev",
-      "image": "images/ayumi.jpg",
-      "altText": "Articia App - Frontend Development Project by Shaurya Soni",
-      "link": "https://shauryasoni262.github.io/Articia/"
+      "id": "yestojoin",
+      "title": "YesToJoin",
+      "titleFormatted": "YesTo<span class=\"fonting\">J</span>oin",
+      "year": "2025–2026",
+      "role": "Lead Full-Stack Dev",
+      "image": "images/yestojoin.png",
+      "altText": "YesToJoin - Enterprise Hospitality Recruitment & Talent Discovery Platform by Shaurya Soni",
+      "link": "https://yestojoin.com"
     },
     {
       "id": "rbac-ui",
@@ -327,14 +328,14 @@ const defaultPortfolioSchema = {
       "link": "https://vrv-security-assignment.netlify.app/"
     },
     {
-      "id": "todo-list",
-      "title": "Todo-List",
-      "titleFormatted": "T<span class=\"fonting\">o</span>do-List",
-      "year": "2024",
-      "role": "React & Redux",
-      "image": "images/Imgs.jpg",
-      "altText": "Todo-List App - React and Redux Project by Shaurya Soni",
-      "link": "https://todo-list-shauryas.netlify.app/"
+      "id": "sarthiq",
+      "title": "SarthiQ",
+      "titleFormatted": "S<span class=\"fonting\">a</span>rthiQ",
+      "year": "2025–2026",
+      "role": "Next.js & Node.js",
+      "image": "images/sarthiq.png",
+      "altText": "SarthiQ - Intelligent EdTech & Career Acceleration Platform by Shaurya Soni",
+      "link": "https://sarthiq.com"
     },
     {
       "id": "wedding-invitation",
@@ -390,8 +391,8 @@ function renderPortfolioDOM(data) {
       
       const formattedTitle = proj.titleFormatted || proj.title;
 
-      projDiv.innerHTML = `
-        <div class="image-container" data-scroll>
+      if (idx < 2) {
+        projDiv.innerHTML = `
           <a href="${proj.link}" target="_blank" rel="noopener noreferrer">
             <img data-scroll data-scroll-speed="-2" src="${proj.image}" alt="${proj.altText || proj.title}">
           </a>
@@ -402,8 +403,21 @@ function renderPortfolioDOM(data) {
               <div class="website-name" data-scroll>${formattedTitle}</div>
             </div>
           </div>
-        </div>
-      `;
+        `;
+      } else {
+        projDiv.innerHTML = `
+          <div class="image-container" data-scroll>
+            <a href="${proj.link}" target="_blank" rel="noopener noreferrer">
+              <img data-scroll data-scroll-speed="-2" src="${proj.image}" alt="${proj.altText || proj.title}">
+            </a>
+            <div class="text-overlay" data-scroll>
+              <div class="year" data-scroll>Year: ${proj.year || ''}</div>
+              <div class="role" data-scroll>Role: ${proj.role || ''}</div>
+              <div class="website-name" data-scroll>${formattedTitle}</div>
+            </div>
+          </div>
+        `;
+      }
       imagesContainer.appendChild(projDiv);
     });
 
@@ -413,6 +427,19 @@ function renderPortfolioDOM(data) {
       const formattedCount = data.projects.length < 10 ? `(0${data.projects.length})` : `(${data.projects.length})`;
       miniCounter.textContent = formattedCount;
     }
+
+    // Refresh Locomotive Scroll & ScrollTrigger on image loads to prevent scroll cutoff
+    const projectImgs = imagesContainer.querySelectorAll('img');
+    projectImgs.forEach(img => {
+      if (!img.complete) {
+        img.addEventListener('load', () => {
+          if (window.locoScrollInstance) window.locoScrollInstance.update();
+          if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
+        });
+      }
+    });
+    if (window.locoScrollInstance) window.locoScrollInstance.update();
+    if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
   }
 
   // Render About Me Text
