@@ -284,7 +284,7 @@ const defaultPortfolioSchema = {
     "lastName": "Soni",
     "title": "Full-Stack Developer | React & Node.js Expert | Lucknow",
     "bioHeadline": "I AM SHAURYA SONI, I CREATE Unconventional YET FUNCTIONAL & VISUALLY PLEASING INTERFACES FOR THE MOBILE AND WEB.",
-    "aboutMe": "I'm Shaurya Soni, a passionate full-stack developer from Lucknow, India. Beyond coding, I'm passionate about exploring the mysteries of space, capturing the beauty of life through photography, and expressing creativity through art. As a professional developer, I combine technical expertise with creative vision to build innovative web applications and mobile solutions.",
+    "aboutMe": "Passionate about engineering scalable distributed systems, fluid motion architectures, and high-performance digital platforms with refined editorial aesthetics.",
     "availability": "CURRENTLY AVAILABLE FOR FREELANCE WORLDWIDE",
     "email": "shauryasoni262@gmail.com",
     "location": "Lucknow, Uttar Pradesh, India",
@@ -349,9 +349,51 @@ const defaultPortfolioSchema = {
     }
   ],
   "expertise": [
-    { "id": "frontend", "name": "Frontend Development", "description": "React • JavaScript • GSAP • Bootstrap • Redux • HTML/CSS" },
-    { "id": "backend", "name": "Backend Development", "description": "Node.js • Express.js • MongoDB • RESTful APIs • Database Design" },
-    { "id": "mobile", "name": "Mobile App Development", "description": "Flutter • Dart • Cross-platform • Mobile UI/UX • App Deployment" }
+    {
+      "id": "frontend",
+      "num": "01",
+      "year": "2025 – 2026",
+      "category": "Frontend",
+      "name": "Frontend Architecture & Motion",
+      "nameFormatted": "Frontend Architecture <span class=\"fonting\">&</span> Motion",
+      "summary": "Building high-performance, fluid web interfaces with 60fps GSAP animations, Next.js 15 App Router, and responsive design systems."
+    },
+    {
+      "id": "backend",
+      "num": "02",
+      "year": "2025 – 2026",
+      "category": "Backend",
+      "name": "APIs, Microservices & Databases",
+      "nameFormatted": "APIs, Microservices <span class=\"fonting\">&</span> Databases",
+      "summary": "Architecting scalable Node.js/Express backends, resilient MySQL and MongoDB schemas, Redis caching layers, and secure multi-tenant auth."
+    },
+    {
+      "id": "mobile",
+      "num": "03",
+      "year": "2024 – 2026",
+      "category": "Mobile",
+      "name": "Cross-Platform Mobile Apps",
+      "nameFormatted": "Cross-Platform Mobile Apps",
+      "summary": "Developing production Flutter & Dart mobile applications with native device integrations, offline-first sync, and smooth 60fps UI/UX."
+    },
+    {
+      "id": "cloud",
+      "num": "04",
+      "year": "2024 – 2026",
+      "category": "Cloud & DevOps",
+      "name": "Cloud Infrastructure & CI/CD",
+      "nameFormatted": "Cloud Infrastructure <span class=\"fonting\">&</span> CI/CD",
+      "summary": "Deploying zero-downtime applications with AWS S3 media pipelines, PM2 clustering, Nginx reverse proxies, and automated GitHub Actions."
+    },
+    {
+      "id": "fullstack",
+      "num": "05",
+      "year": "Core Stack",
+      "category": "Specialization",
+      "name": "React · Next.js · Node.js · Flutter",
+      "nameFormatted": "React · Next.js · Node.js · Flutter",
+      "summary": "End-to-end full-stack software engineering combining rigorous architectural patterns with creative, award-winning front-end precision."
+    }
   ]
 };
 
@@ -442,30 +484,43 @@ function renderPortfolioDOM(data) {
     if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
   }
 
-  // Render About Me Text
-  const aboutMeSection = document.getElementById('about-me');
-  if (aboutMeSection && data.personal) {
-    const aboutHeading = aboutMeSection.querySelector('h1');
-    const aboutDesc = aboutMeSection.querySelector('p');
-    if (aboutHeading) aboutHeading.textContent = `@More About Me - ${data.personal.title || 'Full-Stack Developer'}`;
-    if (aboutDesc && data.personal.aboutMe) aboutDesc.textContent = data.personal.aboutMe;
+    // Render Featured Engineering Card in Honors
+  const featuredCard = document.querySelector('.c-featured');
+  if (featuredCard && data.personal) {
+    const featDesc = featuredCard.querySelector('p:last-child');
+    if (featDesc && data.personal.aboutMe) {
+      featDesc.textContent = data.personal.aboutMe;
+    }
   }
 
-  // Render Expertise / Skills
-  const servicesContainer = document.querySelector('#expertise .services');
-  if (servicesContainer && data.expertise && Array.isArray(data.expertise)) {
-    servicesContainer.innerHTML = '';
-    data.expertise.forEach(item => {
-      const box = document.createElement('div');
-      box.className = 'service-box';
-      box.setAttribute('itemprop', 'knowsAbout');
-      box.setAttribute('itemscope', '');
-      box.setAttribute('itemtype', 'https://schema.org/Thing');
-      box.innerHTML = `
-        <h3 itemprop="name">${item.name}</h3>
-        <p itemprop="description">${item.description}</p>
+  // Render Honors / Expertise (Authentic Abhishek Jha Two-Column SOTD Layout)
+  const honorsList = document.querySelector('.c-honors__list ul');
+  if (honorsList && data.expertise && Array.isArray(data.expertise)) {
+    honorsList.innerHTML = '';
+    data.expertise.forEach((item, idx) => {
+      const li = document.createElement('li');
+      li.setAttribute('itemprop', 'knowsAbout');
+      li.setAttribute('itemscope', '');
+      li.setAttribute('itemtype', 'https://schema.org/Thing');
+
+      const numFormatted = item.year || (item.num ? item.num.replace('/', '').trim() : `2025 – 2026`);
+      const cat = item.category || item.name || 'Discipline';
+      const heading = item.nameFormatted || item.name;
+
+      li.innerHTML = `
+        <div class="c-honors__item-meta">
+          <span class="o-title-small"><span class="fonting">for </span>${cat}<br>${numFormatted}</span>
+        </div>
+        <div class="c-honors__item-title">
+          <p itemprop="name"><span>${heading}</span></p>
+        </div>
+        <div class="c-honors__btn" aria-label="Explore ${cat}">
+          <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.8586 4.28717C20.0248 4.12102 20.0248 3.85164 19.8586 3.68549L17.1511 0.97791C16.9849 0.811759 16.7155 0.811759 16.5494 0.97791C16.3832 1.14406 16.3832 1.41344 16.5494 1.57959L18.9561 3.98633L16.5494 6.39306C16.3832 6.55921 16.3832 6.8286 16.5494 6.99475C16.7155 7.1609 16.9849 7.1609 17.1511 6.99475L19.8586 4.28717ZM0.47876 4.41178L19.5578 4.41178V3.56087L0.47876 3.56087V4.41178Z" fill="currentColor"/>
+          </svg>
+        </div>
       `;
-      servicesContainer.appendChild(box);
+      honorsList.appendChild(li);
     });
   }
 
