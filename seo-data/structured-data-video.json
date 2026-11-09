@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "VideoObject",
   "name": "Shaurya Soni Portfolio Projects Demo",
-  "description": "Demonstration of full-stack development projects including CloudDrive App, YesToJoin Platform, RBAC UI, SarthiQ Platform, and Wedding Invitation applications.",
+  "description": "Demonstration of full-stack development projects including Hotel CRS, YesToJoin Platform, RBAC UI, SarthiQ Platform, and Wedding Invitation applications.",
   "thumbnailUrl": "https://shauryasoni262.github.io/images/shaurya-favicons.png",
   "uploadDate": "2025-01-27",
   "duration": "PT5M",
@@ -32,8 +32,8 @@
   "about": [
     {
       "@type": "SoftwareApplication",
-      "name": "CloudDrive App",
-      "description": "Backend development project"
+      "name": "Hotel CRS",
+      "description": "Multi-tenant central reservation system"
     },
     {
       "@type": "SoftwareApplication",

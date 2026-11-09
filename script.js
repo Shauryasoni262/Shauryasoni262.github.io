@@ -298,14 +298,14 @@ const defaultPortfolioSchema = {
   },
   "projects": [
     {
-      "id": "clouddrive",
-      "title": "CloudDrive App",
-      "titleFormatted": "C<span class=\"fonting\">l</span>oudDrive App",
-      "year": "2025",
-      "role": "Back-End Dev",
-      "image": "images/jug.jpg",
-      "altText": "CloudDrive App - Backend Development Project by Shaurya Soni",
-      "link": "https://clouddrive-s75j.onrender.com"
+      "id": "hotel-crs",
+      "title": "Hotel CRS",
+      "titleFormatted": "H<span class=\"fonting\">o</span>tel CRS",
+      "year": "2026",
+      "role": "Next.js & Multi-Tenant CRS",
+      "image": "images/hotel-crs.png",
+      "altText": "Hotel CRS - Multi-Tenant Central Reservation System by Shaurya Soni",
+      "link": "https://lemon-tree.homocation.com/"
     },
     {
       "id": "yestojoin",
