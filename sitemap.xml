@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Main Portfolio Homepage -->
+  <url>
+    <loc>https://shauryasoni262.github.io/</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://shauryasoni262.github.io/images/hotel-crs.png</image:loc>
+      <image:title>Hotel CRS - Multi-Tenant Central Reservation System by Shaurya Soni</image:title>
+      <image:caption>Enterprise-grade multi-tenant Central Reservation System and dynamic headless CMS engineered with Next.js, Node.js, MySQL, and Redis</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shauryasoni262.github.io/images/yestojoin.png</image:loc>
+      <image:title>YesToJoin Platform - Hospitality Talent Discovery Ecosystem</image:title>
+      <image:caption>Enterprise recruitment and talent discovery ecosystem engineered with Next.js 16, Node.js, and MySQL</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shauryasoni262.github.io/images/Imageing.jpg</image:loc>
+      <image:title>RBAC UI - Role-Based Access Control Architecture</image:title>
+      <image:caption>React-based role and permission management system with dynamic access control and audit logging</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shauryasoni262.github.io/images/sarthiq.png</image:loc>
+      <image:title>SarthiQ - Career &amp; EdTech Acceleration Platform</image:title>
+      <image:caption>Intelligent career intelligence and mentoring ecosystem built with Next.js 15, Node.js, Express, and MySQL</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shauryasoni262.github.io/images/shaurya-favicons.png</image:loc>
+      <image:title>Shaurya Soni - Full-Stack Developer &amp; Creative Engineer</image:title>
+      <image:caption>Professional portfolio of freelance full-stack engineer and creative technologist Shaurya Soni</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Featured Showcase Project URLs -->
+  <url>
+    <loc>https://lemon-tree.homocation.com/</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://yestojoin.com</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://sarthiq.com</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://vrv-security-assignment.netlify.app/</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://shauryasoni262.github.io/Wedding-Invitation/</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
+

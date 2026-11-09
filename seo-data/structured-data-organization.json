@@ -1,15 +1,22 @@
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Shaurya Soni Development Services",
+  "@type": ["ProfessionalService", "Organization"],
+  "name": "Shaurya Soni — Full-Stack Development & Engineering Services",
   "alternateName": "Shaurya Soni Portfolio",
   "url": "https://shauryasoni262.github.io/",
   "logo": "https://shauryasoni262.github.io/images/shaurya-favicons.png",
-  "description": "Professional full-stack web development services specializing in React, Node.js, Express.js, and MongoDB. Based in Lucknow, India, serving clients worldwide.",
+  "image": "https://shauryasoni262.github.io/images/hotel-crs.png",
+  "description": "Professional Full-Stack Web Development, Custom SaaS Engineering, and Multi-Tenant Central Reservation Systems (CRS) using Next.js, React, Node.js, and MySQL. Available for remote freelance, contract, and global client consulting.",
+  "priceRange": "$$",
+  "currenciesAccepted": "USD, EUR, GBP, INR, CAD, AUD",
+  "paymentAccepted": "Stripe, Wire Transfer, PayPal, UPI",
   "foundingDate": "2023",
   "founder": {
     "@type": "Person",
-    "name": "Shaurya Soni"
+    "name": "Shaurya Soni",
+    "jobTitle": "Senior Full-Stack Developer & Creative Engineer",
+    "email": "shauryasoni262@gmail.com",
+    "url": "https://shauryasoni262.github.io/"
   },
   "address": {
     "@type": "PostalAddress",
@@ -19,8 +26,7 @@
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+91-XXXXXXXXXX",
-    "contactType": "customer service",
+    "contactType": "Client Inquiry & Project Booking",
     "email": "shauryasoni262@gmail.com",
     "availableLanguage": ["English", "Hindi"]
   },
@@ -30,44 +36,48 @@
     "https://x.com/shauryasoni262",
     "https://www.instagram.com/_shaurya.262_/"
   ],
-  "serviceArea": {
-    "@type": "Country",
-    "name": "Worldwide"
-  },
+  "areaServed": [
+    { "@type": "Country", "name": "United States" },
+    { "@type": "Country", "name": "United Kingdom" },
+    { "@type": "Country", "name": "Canada" },
+    { "@type": "Country", "name": "Germany" },
+    { "@type": "Country", "name": "India" },
+    { "@type": "Country", "name": "Worldwide" }
+  ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Web Development Services",
+    "name": "Full-Stack Software Development Services",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Frontend Development",
-          "description": "React-based frontend development with modern UI/UX design"
+          "name": "Custom Full-Stack SaaS & Web App Development",
+          "description": "End-to-end production engineering from database schema design to responsive modern frontend using Next.js, React, Node.js, Express, and PostgreSQL/MySQL."
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Backend Development",
-          "description": "Node.js and Express.js backend development with MongoDB integration"
+          "name": "Enterprise Multi-Tenant Systems & Hotel CRS",
+          "description": "Architecting high-concurrency multi-tenant hospitality reservation systems, real-time inventory management, Redis caching, and dynamic booking engines."
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Full-Stack Development",
-          "description": "Complete web application development from frontend to backend"
+          "name": "High-Performance Next.js & React Frontend Engineering",
+          "description": "Awwwards-caliber visual design, GSAP animations, Locomotive Scroll, high-conversion responsive landing pages, and interactive WebGL experiences."
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Mobile App Development",
-          "description": "Cross-platform mobile application development"
+          "name": "Scalable Backend APIs, Database Design & Cloud Infrastructure",
+          "description": "Robust Node.js microservices, secure authentication (JWT, OAuth), role-based access control (RBAC), database optimization, and CI/CD deployment."
         }
       }
     ]

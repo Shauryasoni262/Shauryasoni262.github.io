@@ -4,42 +4,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What services does Shaurya Soni offer?",
+      "name": "How can I hire Shaurya Soni for my web development or SaaS project?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Shaurya Soni offers full-stack web development services including frontend development with React, backend development with Node.js and Express.js, database design with MongoDB, and mobile app development. He specializes in creating responsive web applications and is available for freelance projects worldwide."
+        "text": "You can hire Shaurya Soni directly by emailing shauryasoni262@gmail.com or connecting on LinkedIn (linkedin.com/in/shaurya-soni-484589237). He is available for freelance projects, contract roles, and full-stack consulting worldwide with quick response within 24 hours."
       }
     },
     {
       "@type": "Question",
-      "name": "Where is Shaurya Soni located?",
+      "name": "What development services and technologies does Shaurya Soni specialize in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Shaurya Soni is based in Lucknow, Uttar Pradesh, India. He provides services to clients worldwide and is available for remote work and freelance projects."
+        "text": "Shaurya specializes in end-to-end full-stack engineering: Next.js (15/16), React, Node.js, Express.js, TypeScript, MySQL, MongoDB, Redis caching, and OpenSearch. His core services include Custom SaaS platforms, Enterprise Multi-Tenant Central Reservation Systems (CRS), Awwwards-caliber interactive motion UI (GSAP, Locomotive Scroll), and scalable backend APIs."
       }
     },
     {
       "@type": "Question",
-      "name": "What technologies does Shaurya Soni specialize in?",
+      "name": "Does Shaurya Soni work with remote international clients in the US, UK, and Europe?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Shaurya specializes in React for frontend development, Node.js and Express.js for backend development, MongoDB for database management, JavaScript programming, Java for software engineering, and modern web development technologies. He also has experience with GSAP animations, Bootstrap, and Redux for state management."
+        "text": "Yes, Shaurya actively collaborates with founders, product teams, and digital agencies across the United States, United Kingdom, Canada, Europe, and India. He ensures seamless communication with timezone overlap, async progress updates via Slack and GitHub, and sprint-based milestones."
       }
     },
     {
       "@type": "Question",
-      "name": "How can I contact Shaurya Soni for a project?",
+      "name": "Can Shaurya Soni build complex full-stack web applications from scratch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can contact Shaurya Soni via email at shauryasoni262@gmail.com, through LinkedIn at https://www.linkedin.com/in/shaurya-soni-484589237/, or via GitHub at https://github.com/Shauryasoni262/. He is available for freelance projects and consultations."
+        "text": "Yes, Shaurya delivers complete end-to-end solutions from architecture design, database schema modeling, and backend microservices to responsive, fluid, motion-rich frontend web applications with secure authentication, RBAC, payment gateways, and automated CI/CD deployment."
       }
     },
     {
       "@type": "Question",
-      "name": "What kind of projects has Shaurya Soni worked on?",
+      "name": "What is Shaurya Soni's engagement model and project turnaround time?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Shaurya has worked on various projects including Hotel CRS (enterprise multi-tenant central reservation system with Next.js, Node.js, and MySQL), YesToJoin Platform (enterprise hospitality recruitment ecosystem with Next.js 16 and Node.js), RBAC UI (React-based role management), SarthiQ Platform (EdTech & career acceleration platform with Next.js 15 and Node.js), and Wedding Invitation websites. His portfolio showcases expertise in both frontend and backend development."
+        "text": "Engagement models include sprint-based milestone delivery, fixed-scope project contracts, and dedicated monthly full-stack engineering retainers. Turnaround time depends on project scope, with MVPs typically delivered within 2–4 weeks."
       }
     }
   ]

@@ -1,65 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
-  <!-- Main Portfolio Page -->
+  <!-- Main Portfolio Homepage -->
   <url>
     <loc>https://shauryasoni262.github.io/</loc>
-    <lastmod>2025-01-27</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://shauryasoni262.github.io/images/shaurya-favicons.png</image:loc>
-      <image:title>Shaurya Soni - Full-Stack Developer Logo</image:title>
-      <image:caption>Professional logo for Shaurya Soni, a Full-Stack Developer from Lucknow specializing in React, Node.js, Express.js, and MongoDB development</image:caption>
+      <image:loc>https://shauryasoni262.github.io/images/hotel-crs.png</image:loc>
+      <image:title>Hotel CRS - Multi-Tenant Central Reservation System by Shaurya Soni</image:title>
+      <image:caption>Enterprise-grade multi-tenant Central Reservation System and dynamic headless CMS engineered with Next.js, Node.js, MySQL, and Redis</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://shauryasoni262.github.io/images/jug.jpg</image:loc>
-      <image:title>CloudDrive App - Backend Development Project</image:title>
-      <image:caption>Backend development project showcasing cloud storage application development</image:caption>
+      <image:loc>https://shauryasoni262.github.io/images/yestojoin.png</image:loc>
+      <image:title>YesToJoin Platform - Hospitality Talent Discovery Ecosystem</image:title>
+      <image:caption>Enterprise recruitment and talent discovery ecosystem engineered with Next.js 16, Node.js, and MySQL</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://shauryasoni262.github.io/images/ayumi.jpg</image:loc>
-      <image:title>Articia App - Frontend Development Project</image:title>
-      <image:caption>Frontend development project demonstrating React and modern web technologies</image:caption>
+      <image:loc>https://shauryasoni262.github.io/images/Imageing.jpg</image:loc>
+      <image:title>RBAC UI - Role-Based Access Control Architecture</image:title>
+      <image:caption>React-based role and permission management system with dynamic access control and audit logging</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shauryasoni262.github.io/images/sarthiq.png</image:loc>
+      <image:title>SarthiQ - Career &amp; EdTech Acceleration Platform</image:title>
+      <image:caption>Intelligent career intelligence and mentoring ecosystem built with Next.js 15, Node.js, Express, and MySQL</image:caption>
     </image:image>
   </url>
   
-  <!-- Project Pages -->
+  <!-- Featured Showcase Project URLs -->
   <url>
-    <loc>https://clouddrive-s75j.onrender.com</loc>
-    <lastmod>2025-01-27</lastmod>
+    <loc>https://lemon-tree.homocation.com/</loc>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://shauryasoni262.github.io/Articia/</loc>
-    <lastmod>2023-12-31</lastmod>
+    <loc>https://yestojoin.com</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://sarthiq.com</loc>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://vrv-security-assignment.netlify.app/</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://todo-list-shauryas.netlify.app/</loc>
-    <lastmod>2024-12-31</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://shauryasoni262.github.io/Wedding-Invitation/</loc>
-    <lastmod>2023-12-31</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-  
+
 </urlset>
