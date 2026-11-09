@@ -1340,15 +1340,24 @@ background-image: url('assets/rippaper.svg');
 .icon {
   width: 6vw;
   height: 6vw;
-  font-size: 3vw;
   background-color: white;
   border-radius: 50%;
   color: black;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   transition: transform 0.2s ease-in-out; 
 }
-.icon i{
-  padding-top: 1.7vw;
+.icon svg {
+  width: 52%;
+  height: 52%;
+  fill: currentColor;
+  display: block;
+}
+.icon i {
+  display: none;
 }
 .link-item:hover .icon {
   transform: translateX(-3vw); /* Slightly move icon to the left  */
@@ -1450,15 +1459,26 @@ background-image: url('assets/rippaper.svg');
 .icon {
   width: 2.5vw;
   height: 2.5vw;
-  font-size: 1.5vw;
+  min-width: 36px;
+  min-height: 36px;
   background-color: white;
   border-radius: 50%;
   color: black;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   transition: transform 0.2s ease-in-out; 
 }
-.icon i{
-  padding-top: 0.5vw;
+.icon svg {
+  width: 50%;
+  height: 50%;
+  fill: currentColor;
+  display: block;
+}
+.icon i {
+  display: none;
 }
 .link-item:hover .icon {
   transform: translateX(-1vw);
