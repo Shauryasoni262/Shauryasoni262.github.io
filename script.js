@@ -133,7 +133,7 @@ function updateLocalTime() {
 
 
 function locoInitialize() {
-    const isMobile = window.innerWidth <= 900;
+    const isMobile = window.innerWidth <= 1024;
     gsap.registerPlugin(ScrollTrigger);
 
     if (isMobile) {
