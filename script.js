@@ -117,11 +117,15 @@ function animateHomepage() {
 
 function updateLocalTime() {
     const localTimeElement = document.getElementById('local-time');
+    const localTimeMobElement = document.getElementById('local-time-mob');
     const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
-    localTimeElement.textContent = `${hours}:${minutes}:${seconds}`;
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    const timeFull = `${hours}:${minutes}:${seconds}`;
+    const timeShort = `${hours}:${minutes}`;
+    if (localTimeElement) localTimeElement.textContent = timeFull;
+    if (localTimeMobElement) localTimeMobElement.textContent = timeShort;
 }
 
 
@@ -129,21 +133,97 @@ function updateLocalTime() {
 
 
 function locoInitialize() {
-    // Initialize LocomotiveScroll
+    const isMobile = window.innerWidth <= 900;
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (isMobile) {
+        // Mobile: pure native 120Hz smooth scrolling without proxy lag
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector("#main"),
+            smooth: false,
+            smoothMobile: false,
+            smartphone: { smooth: false },
+            tablet: { smooth: false }
+        });
+        window.locoScrollInstance = scroll;
+
+        window.addEventListener("scroll", () => {
+            ScrollTrigger.update();
+        });
+
+        // Image rotation animations on mobile
+        gsap.to("#imgrig .imgcntnr:nth-child(1)", {
+            rotate: -35,
+            scrollTrigger: {
+                trigger: "#imgrig",
+                start: "top 95%",
+                end: "top 15%",
+                scrub: true
+            }
+        });
+
+        gsap.to("#imgrig .imgcntnr:nth-child(2)", {
+            rotate: -12,
+            scrollTrigger: {
+                trigger: "#imgrig",
+                start: "top 95%",
+                end: "top 15%",
+                scrub: true
+            }
+        });
+
+        gsap.to("#imgrig .imgcntnr:nth-child(3)", {
+            rotate: 8,
+            scrollTrigger: {
+                trigger: "#imgrig",
+                start: "top 95%",
+                end: "top 15%",
+                scrub: true
+            }
+        });
+
+        // Text animation on mobile
+        gsap.fromTo(
+            ".animate-text span",
+            {
+                y: "100%",
+                opacity: 0
+            },
+            {
+                y: "0%",
+                opacity: 1,
+                duration: 0.35,
+                stagger: 0.04,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".h1-container",
+                    start: "top 85%",
+                    end: "bottom 10%"
+                }
+            }
+        );
+
+        ScrollTrigger.refresh();
+
+        window.addEventListener("resize", () => {
+            ScrollTrigger.refresh();
+        });
+        return;
+    }
+
+    // Desktop: Locomotive Smooth Scroll with scrollerProxy
     const scroll = new LocomotiveScroll({
-        el: document.querySelector("#main"), // Main scroll container
-        smooth: true
+        el: document.querySelector("#main"),
+        smooth: true,
+        lerp: 0.08
     });
     window.locoScrollInstance = scroll;
-
-    // Sync ScrollTrigger with LocomotiveScroll
-    gsap.registerPlugin(ScrollTrigger);
 
     ScrollTrigger.scrollerProxy("#main", {
         scrollTop(value) {
             return arguments.length
-                ? scroll.scrollTo(value, 0, 0) // Scroll to the specified position
-                : scroll.scroll.instance.scroll.y; // Get current scroll position
+                ? scroll.scrollTo(value, 0, 0)
+                : scroll.scroll.instance.scroll.y;
         },
         getBoundingClientRect() {
             return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
@@ -151,51 +231,47 @@ function locoInitialize() {
         pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
     });
 
-    // Update ScrollTrigger and LocomotiveScroll on scroll events
     scroll.on("scroll", () => {
         ScrollTrigger.update();
     });
 
     ScrollTrigger.addEventListener("refresh", () => scroll.update());
 
-    // Image rotation animations
+    // Desktop Image rotation animations
     gsap.to("#imgrig .imgcntnr:nth-child(1)", {
-        rotate: -40, // Rotate image
+        rotate: -40,
         scrollTrigger: {
             trigger: "#imgrig",
-            start: "top 100%", // Trigger point
-            end: "top 10%",   // End point
-            scrub: true,      // Smooth scrolling effect
-            scroller: "#main", // Pass LocomotiveScroll container here
-            markers: false     // Debugging markers (remove in production)
+            start: "top 100%",
+            end: "top 10%",
+            scrub: true,
+            scroller: "#main"
         }
     });
 
     gsap.to("#imgrig .imgcntnr:nth-child(2)", {
-        rotate: -15, // Rotate image
+        rotate: -15,
         scrollTrigger: {
             trigger: "#imgrig",
-            start: "top 100%", // Trigger point
-            end: "top 10%",   // End point
-            scrub: true,      // Smooth scrolling effect
-            scroller: "#main", // Pass LocomotiveScroll container here
-            markers: false    // Debugging markers (remove in production)
+            start: "top 100%",
+            end: "top 10%",
+            scrub: true,
+            scroller: "#main"
         }
     });
 
     gsap.to("#imgrig .imgcntnr:nth-child(3)", {
-        rotate: 5, // Rotate image
+        rotate: 5,
         scrollTrigger: {
             trigger: "#imgrig",
-            start: "top 100%", // Trigger point
-            end: "top 10%",   // End point
-            scrub: true,      // Smooth scrolling effect
-            scroller: "#main", // Pass LocomotiveScroll container here
-            markers: false     // Debugging markers (remove in production)
+            start: "top 100%",
+            end: "top 10%",
+            scrub: true,
+            scroller: "#main"
         }
     });
 
-    // Text animation example
+    // Desktop Text animation
     gsap.fromTo(
         ".animate-text span",
         {
@@ -217,8 +293,12 @@ function locoInitialize() {
         }
     );
 
-    // Refresh ScrollTrigger after initialization
     ScrollTrigger.refresh();
+
+    window.addEventListener("resize", () => {
+        scroll.update();
+        ScrollTrigger.refresh();
+    });
 }
 
 // Initialize everything

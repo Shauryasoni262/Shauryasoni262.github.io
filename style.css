@@ -45,6 +45,15 @@ body.loading {
     height: 100vh !important;
 }
 
+/* Visibility Utilities */
+.o-mobile {
+  display: none !important;
+}
+.o-desktop {
+  display: block;
+}
+}
+
 
 #loader{
  display: block; 
@@ -348,7 +357,6 @@ path, polyline {
     display: inline-block; /* Each word is inline-block */
     opacity: 0; /* Initially hidden */
     transform: translateY(100%); /* Start from below */
-    transition: transform 0.5s, opacity 0.5s ease-in-out;
 }
 
 #imglef h1 span.highlight {
@@ -1093,6 +1101,276 @@ background-image: url('assets/rippaper.svg');
 
 /* Responsive Tablet & Mobile */
 @media (max-width: 900px) {
+  /* Visibility toggles */
+  .o-desktop {
+    display: none !important;
+  }
+  .o-mobile {
+    display: block !important;
+  }
+  .o-mobile.hero-meta {
+    display: flex !important;
+  }
+
+  /* Native touch scrolling reset */
+  html, body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    height: auto !important;
+  }
+  #main {
+    overflow: visible !important;
+    height: auto !important;
+    transform: none !important;
+  }
+
+  /* Navigation on mobile */
+  #nav {
+    top: 0 !important;
+    height: 10vh !important;
+    padding: 0 6vw !important;
+    align-items: center !important;
+    position: fixed !important;
+    z-index: 1000 !important;
+    background: transparent !important;
+  }
+  #nav a {
+    font-size: 11px !important;
+    letter-spacing: 0.05em !important;
+    font-weight: 500 !important;
+  }
+  #nav .nav-item,
+  #nav a[href*="drive.google.com"] {
+    display: none !important;
+  }
+
+  /* Hero Section on mobile */
+  #home {
+    padding-top: 13vh !important;
+    overflow: hidden;
+  }
+  .row {
+    padding: 0 6vw !important;
+    padding-right: 6vw !important;
+  }
+  .creative-row {
+    margin-top: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .creative-row h1,
+  .developer-row h1 {
+    font-size: clamp(52px, 15.5vw, 76px) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.03em !important;
+    margin: 0 !important;
+  }
+  .developer-row {
+    margin-top: 2.2vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1.8vh !important;
+  }
+  .c-title__svg {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 3.5vw !important;
+    margin: 0.5vh 0 !important;
+  }
+  .c-visual-line {
+    width: 14vw !important;
+    height: 5px !important;
+    background-color: #14CF93 !important;
+    border-radius: 3px !important;
+    display: inline-block !important;
+  }
+  .c-visual {
+    height: 12vw !important;
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  .c-visual svg {
+    height: 100% !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+  .hero-meta {
+    margin-top: 7vh !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    padding: 0 6vw !important;
+  }
+  .hero-meta .text h5 {
+    font-size: 10px !important;
+    line-height: 1.45 !important;
+    letter-spacing: 0.05em !important;
+    color: #888 !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+  }
+
+  /* About / 3 Photo Cards on mobile */
+  #imagery {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    margin-top: 10vh !important;
+    padding: 6vh 6vw 10vh !important;
+    gap: 6vh !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  #imgrig {
+    width: 100% !important;
+    height: 48vh !important;
+    min-height: 340px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    margin: 2vh 0 3vh !important;
+  }
+  #imgrig .imgcntnr {
+    position: absolute !important;
+    width: 66vw !important;
+    height: 86vw !important;
+    max-width: 310px !important;
+    max-height: 400px !important;
+    border-radius: 26px !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.14) !important;
+  }
+  #imgrig .imgcntnr:nth-child(1) {
+    transform: translate(-12%, -8%) rotate(-10deg) !important;
+  }
+  #imgrig .imgcntnr:nth-child(2) {
+    transform: translate(0%, 0%) rotate(0deg) !important;
+  }
+  #imgrig .imgcntnr:nth-child(3) {
+    transform: translate(12%, 8%) rotate(10deg) !important;
+  }
+  #imglef {
+    width: 100% !important;
+    overflow: visible !important;
+  }
+  .about-label {
+    font-size: 11px !important;
+    letter-spacing: 0.08em !important;
+    color: #888 !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    margin-bottom: 2vh !important;
+    display: block !important;
+  }
+  #imglef h1 {
+    font-size: clamp(24px, 7vw, 32px) !important;
+    line-height: 1.15 !important;
+    font-weight: 500 !important;
+    color: #222 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  /* Feat Works on mobile */
+  #work {
+    padding-top: 16vh !important;
+    scroll-margin-top: 12vh;
+  }
+  #imagery, #honors, #connect {
+    scroll-margin-top: 12vh;
+  }
+  #work .workrow {
+    padding: 0 6vw !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    margin-top: 2vh !important;
+    margin-bottom: 5vh !important;
+    gap: 1.5vh !important;
+  }
+  .workrow h1 {
+    font-size: clamp(48px, 15vw, 72px) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.02em !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .workrow h1 .feat-title {
+    display: block !important;
+  }
+  .workrow h1 .works-title {
+    display: block !important;
+  }
+  .workrow .o-ui-arrow {
+    transform: rotate(45deg) !important;
+    width: 44px !important;
+    height: 44px !important;
+    margin-top: 1.5vh !important;
+  }
+  #images {
+    padding: 0 6vw !important;
+    margin-top: 2vh !important;
+  }
+  .cnt {
+    width: 100% !important;
+    margin-bottom: 5vh !important;
+    border-radius: 26px !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+  .cnt img {
+    height: 64vw !important;
+    min-height: 260px !important;
+    max-height: 380px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    border-radius: 26px !important;
+  }
+  .cnt .text-overlay {
+    position: absolute !important;
+    bottom: 14px !important;
+    left: 14px !important;
+    right: 14px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+    align-items: flex-start !important;
+  }
+  .cnt .text-overlay .year,
+  .cnt .text-overlay .role {
+    font-size: 9px !important;
+    padding: 4px 10px !important;
+    margin: 0 !important;
+    border-radius: 50px !important;
+    letter-spacing: 0.04em !important;
+    line-height: 1.2 !important;
+    background-color: white !important;
+    border: 1px solid white !important;
+    color: black !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+  }
+  .cnt .text-overlay .website-name {
+    font-size: 15px !important;
+    padding: 6px 14px !important;
+    margin: 0 !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    background-color: white !important;
+    border: 1px solid white !important;
+    color: black !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* Honors & Disciplines on mobile */
   .c-honors {
     padding: 10vh 6vw;
   }
@@ -1680,7 +1958,7 @@ background-image: url('assets/rippaper.svg');
 }
 
 
-@media (max-width: 1068px) {
+@media (min-width: 901px) and (max-width: 1068px) {
 
   #work{
   padding-top: 10vw;
@@ -1790,7 +2068,7 @@ background-image: url('assets/rippaper.svg');
   min-height: 100vh;
   }
 }
-@media (max-width: 1268px) {
+@media (min-width: 901px) and (max-width: 1268px) {
   #nav a{
     font-size: 1.7vw;
   }
@@ -1799,8 +2077,9 @@ background-image: url('assets/rippaper.svg');
   }
 }
 @media (max-width: 668px) {
-     #connect {
-  min-height: 40vh;
+  #connect {
+    min-height: auto;
+    padding-bottom: 6vh;
   }
 }
 
