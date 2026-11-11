@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "VideoObject",
   "name": "Shaurya Soni Portfolio Projects Demo",
-  "description": "Demonstration of full-stack development projects including Hotel CRS, YesToJoin Platform, RBAC UI, SarthiQ Platform, and Wedding Invitation applications.",
+  "description": "Demonstration of full-stack development projects including Hotel CRS, YesToJoin Platform, BusinessOps Suite, SarthiQ Platform, and RBAC UI applications.",
   "thumbnailUrl": "https://shauryasoni262.github.io/images/shaurya-favicons.png",
   "uploadDate": "2025-01-27",
   "duration": "PT5M",
@@ -39,6 +39,16 @@
       "@type": "SoftwareApplication",
       "name": "YesToJoin Platform",
       "description": "Enterprise recruitment platform"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "BusinessOps Suite",
+      "description": "Enterprise operations & ERP suite"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "SarthiQ Platform",
+      "description": "EdTech & career acceleration platform"
     },
     {
       "@type": "SoftwareApplication",

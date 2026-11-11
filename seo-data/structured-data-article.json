@@ -79,8 +79,8 @@
     },
     {
       "@type": "SoftwareApplication",
-      "name": "RBAC UI",
-      "url": "https://vrv-security-assignment.netlify.app/"
+      "name": "BusinessOps Suite",
+      "url": "https://business-ops-suite-3otf.vercel.app"
     },
     {
       "@type": "SoftwareApplication",
@@ -89,8 +89,8 @@
     },
     {
       "@type": "SoftwareApplication",
-      "name": "Wedding Invitation",
-      "url": "https://shauryasoni262.github.io/Wedding-Invitation/"
+      "name": "RBAC UI",
+      "url": "https://vrv-security-assignment.netlify.app/"
     }
   ]
 }

@@ -398,14 +398,14 @@ const defaultPortfolioSchema = {
       "link": "https://yestojoin.com"
     },
     {
-      "id": "rbac-ui",
-      "title": "RBAC UI",
-      "titleFormatted": "R<span class=\"fonting\">B</span>AC UI",
-      "year": "2024",
-      "role": "React",
-      "image": "images/Imageing.jpg",
-      "altText": "RBAC UI - React Role-Based Access Control Project by Shaurya Soni",
-      "link": "https://vrv-security-assignment.netlify.app/"
+      "id": "businessops",
+      "title": "BusinessOps Suite",
+      "titleFormatted": "Business<span class=\"fonting\">O</span>ps Suite",
+      "year": "2025–2026",
+      "role": "Lead Full-Stack Architect",
+      "image": "images/businessops.png",
+      "altText": "BusinessOps Suite - Enterprise ERP & Operations Workspace by Shaurya Soni",
+      "link": "https://business-ops-suite-3otf.vercel.app"
     },
     {
       "id": "sarthiq",
@@ -418,14 +418,14 @@ const defaultPortfolioSchema = {
       "link": "https://sarthiq.com"
     },
     {
-      "id": "wedding-invitation",
-      "title": "Wedding-Invitation",
-      "titleFormatted": "Wedding-Invitation",
-      "year": "2023",
-      "role": "Front-End Dev",
-      "image": "images/flowers.jpg",
-      "altText": "Wedding Invitation Website - Frontend Development Project by Shaurya Soni",
-      "link": "https://shauryasoni262.github.io/Wedding-Invitation/"
+      "id": "rbac-ui",
+      "title": "RBAC UI",
+      "titleFormatted": "R<span class=\"fonting\">B</span>AC UI",
+      "year": "2024",
+      "role": "React",
+      "image": "images/Imageing.jpg",
+      "altText": "RBAC UI - React Role-Based Access Control Project by Shaurya Soni",
+      "link": "https://vrv-security-assignment.netlify.app/"
     }
   ],
   "expertise": [
@@ -522,7 +522,9 @@ function renderPortfolioDOM(data) {
             <div class="year" data-scroll>Year: ${proj.year || ''}</div>
             <div class="role" data-scroll>Role: ${proj.role || ''}</div>
             <div class="contain">
-              <div class="website-name" data-scroll>${formattedTitle}</div>
+              <div class="website-name" data-scroll>${formattedTitle}
+                <svg class="prj-arrow" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
             </div>
           </div>
         `;
@@ -535,7 +537,9 @@ function renderPortfolioDOM(data) {
             <div class="text-overlay" data-scroll>
               <div class="year" data-scroll>Year: ${proj.year || ''}</div>
               <div class="role" data-scroll>Role: ${proj.role || ''}</div>
-              <div class="website-name" data-scroll>${formattedTitle}</div>
+              <div class="website-name" data-scroll>${formattedTitle}
+                <svg class="prj-arrow" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
             </div>
           </div>
         `;
